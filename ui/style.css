@@ -1,22 +1,82 @@
-body {
-    font-family: sans-serif;
-    background-color: lightgrey;
-    margin-top: 75px;
+#blogotron
+{
+    color: white;
+    font-size: 5vw;
+    font-family: 'Oswald', sans-serif;
+    margin-left:20px;
 }
 
-.center {
-    text-align: center;
+
+#signin
+{
+    float:right;
+
+    padding: 10px;
+    margin-right: 8px;
+    margin-left: 0px;
 }
 
-.text-big {
-    font-size: 300%;
+#signin-usr #signin-pwd 
+{
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
 }
 
-.bold {
+#signupbtn
+{
+    margin-top: 8px;
+
+   
+}
+#signup
+{
+   margin-top: 150px;
+    margin-left: 5px;
+    float: right;
+    
+    color: white;
+}
+
+.form-control
+{
+    margin-top: 8px;
+    float:left;
+}
+#signuptxt
+{
+    font-size: 2vw;
+    margin-left: 15px;
+    margin-bottom: 10px;
+
+}
+
+#signinbtn
+{
+    margin-top: 8px;
+    float: left;
+    
+   
+}
+
+.btn
+{
+    float:right;
     font-weight: bold;
 }
 
-.img-medium {
-    height: 200px;
+#desc
+{
+    margin-top: 140px;
+    color: white;
+    margin-left: 10px;
+    font-family: 'Prociono', serif;
 }
 
+body
+{
+    
+    background-image: url("../bgimg.jpg"); 
+}
+
+/*END OF HOMEPAGE*/
