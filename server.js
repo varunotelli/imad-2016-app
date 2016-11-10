@@ -19,7 +19,7 @@ app.get('/ui/madi.png', function (req, res) {
 
 app.get('/ui/bootstrap.css', function (req, res) { res.sendFile(path.join(__dirname, 'ui', 'bootstrap.css')); });
 
-app.get('/ui/bootstrap.css', function (req, res) { res.sendFile(path.join(__dirname, 'ui', 'bgimg.jpg')); });
+
 app.get('/ui/bootstrap.min.css', function (req, res) { res.sendFile(path.join(__dirname, 'ui', 'bgimg.jpg')); });
 
 
