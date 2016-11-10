@@ -1,44 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-    </head>
-     <nav class="navbar navbar-default">
 
+
+    </head>
+
+<div class="row">
+<div id="blogotron" class="col-md-4">BLOGOTRON</div>
+<div id="signin" class="col-md-5">
+
+
+ <div id="signin-usr" class="col-md-4"> 
+  <input type="text" class="form-control"  placeholder="Username">
+  </div>
+   <div class="col-md-4"> 
+
+  <input type="password" class="form-control" id="signin-pwd" placeholder="Password">
+  </div>
+  <div class="col-md-4">
+  <button type="submit" id="signinbtn" class="btn btn-primary">Sign In</button>
+  </div>
+  </div>
+
+</div>
+</div>
      
-     <div class="container-fluid">
-  
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-    
-      
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        </button>
-        <div class="navbar-brand"><h1>MY BLOG</h1></div>
-        
-          </div>
-      
-      
-      
-     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-   <ul id="nav-list" class="nav navbar-nav navbar-right">
-   <li><a href="#">LOGIN</a></li>
-   <li><a href="#">HELP</a></li>
-   </ul>
-     </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-    </nav>
-    
+     
 <!--END OF HEADER -->
+
+
+
+<body>
+<div id="signup" class="col-md-5">
+    <div id="signuptxt">New to Blogotron?  <b>SIGN UP</b>
+    </div>
+        <div class="col-md-11">
+            <div class="form-group">
+  
+                <input type="text" class="form-control" id="usr" placeholder="Username">
+            </div>
+            <div class="form-group">
+  
+                <input type="text" class="form-control" id="email" placeholder="Enter Email">
+            </div>
+            <div class="form-group">
+
+                <input type="password" class="form-control" id="pwd" placeholder="Password">
+            </div>
+              <button type="submit" id="signupbtn" class="btn btn-primary">Sign Up</button>
+
+        </div>
+</div>
+
+
+</div>
+
+</body>
+<script type="text/javascript">
+    
+    $("textarea").jqte();
+</script>
+
+
 <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/ajax-utils.js"></script>

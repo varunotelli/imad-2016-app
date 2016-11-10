@@ -1,90 +1,74 @@
-.navbar-toggle
+#blogotron
 {
-    float: left;
-    position: relative;
-    margin-top: 20px;
-    margin-right: 0;
-}
-
-.navbar-default
-{
-    background-color:#02146d;
-    border-color: yellow;
-
-}
-.navbar-brand h1
-{
-    clear: both;
-    margin-top: 0;
-    margin-bottom: 0;
-
+    color: white;
+    font-size: 5vw;
+    font-family: 
+    margin-left:10px;
 }
 
 
-.navbar-default .navbar-brand
+#signin
 {
-    font-size: 36px;
-    text-align: center;
-    padding-top: 0;
-    padding-left: 20px;
-    font-weight: bold;
-    color:orange;
-    font-family: cursive;
-    text-shadow: 2px 2px 4px #000000;
-    
+    float:right;
+
+    padding: 10px;
+    margin-right: 8px;
+    margin-left: 0px;
 }
 
-#nav-list a
+#signin-usr #signin-pwd 
 {
-    text-align: center;
-    clear: right;
-    margin: 5px;
-    color:orange;
-    padding: 5px;
-    font-size: 1.5em;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+#signupbtn
+{
+    margin-top: 8px;
+
+   
+}
+#signup
+{
+   margin-top: 150px;
+    margin-left: 5px;
     float: right;
-    text-shadow: 2px 2px 4px #000000;
-    font-family: cursive;
+    
+    color: white;
 }
 
-@media (max-width: 767px)
+.form-control
 {
-    
-       .navbar-brand h1
-{
-    
-    margin-top:20px;
-    
+    margin-top: 8px;
+    float:left;
 }
-       
-        
-}
-
-@media (min-width: 768px) and (max-width: 991px)
+#signuptxt
 {
-    
-        .navbar-brand h1
-{
-    
-    
-    
-}
-        
-        
-        
-
-    }
-
+    font-size: 2vw;
+    margin-left: 15px;
+    margin-bottom: 10px;
 
 }
 
-
-@media (min-width: 992px) and (max-width: 1199px)
+#signinbtn
 {
-    .container .jumbotron{
-        
-        padding:0px;
-        
+    margin-top: 8px;
+    float: left;
     
+   
+}
 
- }
+.btn
+{
+    float:right;
+    font-weight: bold;
+}
+
+body
+{
+    
+    background-image: url("../bgimg.jpg"); 
+}
+
+/*END OF HOMEPAGE*/
