@@ -12,7 +12,7 @@ signup.onclick=function()
             alert('problem');
         }
     };
-};
+
 
 
 var username=document.getElementById('usr');
@@ -21,3 +21,5 @@ var email=document.getElementById('email');
 request.open('POST','http://varunotelli.imad.hasura-app.io/signup',true);
 request.setRequestHeader('Content-Type','application/json');
 request.send(JSON.stringify({username:username,password:password,email:email}));
+
+};
