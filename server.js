@@ -38,7 +38,7 @@ app.get('/ui/bootstrap.min.css', function (req, res) { res.sendFile(path.join(__
 
 app.get('/ui/bootstrap.css', function (req, res) { res.sendFile(path.join(__dirname, 'ui', 'bootstrap.css')); });
 
-
+app.get('/ui/main.js', function (req, res) { res.sendFile(path.join(__dirname, 'ui', 'main.js')); });
 
 
 app.get('/ui/bgimg.jpg', function (req, res) { res.sendFile(path.join(__dirname, 'ui', 'bgimg.jpg')); });
