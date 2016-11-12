@@ -57,7 +57,7 @@ app.listen(8080, function () {
 var pool = new Pool(config);
 
 app.get('/test-db', function (req, res) {
-    pool.query('SELECT * FROM test',function(req,res){
+    pool.query('SELECT * FROM test',function(err,result){
         if(err){
            res.status(500).res.send(err.toString());
         }
