@@ -125,7 +125,7 @@ app.get('/user',function(req,res){
 
 app.get('/signup',function(req,res){
     
-    var username=req.body.username;
+    var username=req.body.Username;
     var password=req.body.password;
     var email=req.body.email;
     var salt=crypto.randomBytes(128).toString('hex');
