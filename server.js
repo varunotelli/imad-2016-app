@@ -2,6 +2,7 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var Pool = require('pg').Pool;
+var crypto=require('crypto');
 var config = {
   host:'db.imad.hasura-app.io',
   user: 'varunotelli',
@@ -67,6 +68,12 @@ pool.query("SELECT * FROM test",function(err,result){
     
 });
 });
+
+
+app.get('/user/:input',function(req,res){
+    var hashedString=hash(req.params.input,"random string");
+    res.send(hashedString);
+})
 
 
 
