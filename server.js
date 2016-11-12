@@ -93,6 +93,17 @@ app.get('/articles/:articleName',function(req,res){
 });
     
     
+app.get('/user',function(req,res){
+    
+    pool.query("SELECT * from user",function(err,result){
+        if(err)
+        res.status(500).send(err.toString());
+        else
+        res.send(JSON.stringify(result));
+        
+    });
+    
+});
 
 
 
