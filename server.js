@@ -123,7 +123,7 @@ app.get('/user',function(req,res){
 });
 
 
-app.get('/signup',function(req,res){
+app.post('/signup',function(req,res){
     
     var username=req.body.Username;
     var password=req.body.password;
