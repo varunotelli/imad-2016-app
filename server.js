@@ -111,7 +111,7 @@ function createTemplate(data)
         </h1>
         <p>${content}</p>
         <br>
-        <div>Posted on: ${posted}</div>
+        <div>Posted on: ${posted.toDateString()}</div>
         `
         
         ;
