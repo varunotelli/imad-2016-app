@@ -97,22 +97,11 @@ app.get('/articles/:articleName',function(req,res){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 function createTemplate(data)
 {
     var title=data.title;
     var content=data.content;
+    var posted=data.posted;
     var htmlTemplate=
     
         `
@@ -121,6 +110,8 @@ function createTemplate(data)
         ${title}
         </h1>
         <p>${content}</p>
+        <br>
+        <div>Posted on: ${posted}</div>
         `
         
         ;
