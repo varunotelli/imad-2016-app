@@ -123,7 +123,19 @@ app.get('/user',function(req,res){
 });
 
 
-
+app.get('/signup',function(req,res){
+    
+    var salt=randomBytes(128).toString('hex');
+    var dbString=hash(password,salt);
+    pool.query('insert into "user" (Username,Password,email,type) values($1,$2,$3,$4'),[username,dbString,email,'A'],function(err,result){
+        if(err)
+        res.status(500).send(err.toString());
+        else
+        res.send('success');
+        
+    }
+    
+})
 
 function createTemplate(data)
 {
