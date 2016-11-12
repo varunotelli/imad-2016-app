@@ -123,19 +123,22 @@ app.get('/user',function(req,res){
 });
 
 
-app.get('/signup',function(req,res){
+app.post('/signup',function(req,res){
     
+    var username=req.body.username;
+    var password=req.body.password;
     var salt=randomBytes(128).toString('hex');
     var dbString=hash(password,salt);
-    pool.query('insert into "user" (Username,Password,email,type) values($1,$2,$3,$4'),[username,dbString,email,'A'],function(err,result){
-        if(err)
+    
+    pool.query('insert into "user" (Username,Password,email,type) values($1,$2,$3,$4)',[username,dbString,email,'A'],function(err,result){
+    if(err){
         res.status(500).send(err.toString());
-        else
-        res.send('success');
-        
+    }else{
+        window.open("http://varunotelli.imad.hasura-app.io/ui/profile.html");
     }
     
-})
+});
+});
 
 function createTemplate(data)
 {
