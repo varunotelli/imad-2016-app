@@ -1,6 +1,7 @@
 var signup=document.getElementById('signupbtn');
 signup.onclick=function()
 {
+    console.log('in func');
     var request=new XMLHttpRequest();
     request.onreadystatechange=function(){
         if(request.readyState===XMLHttpRequest.DONE)
