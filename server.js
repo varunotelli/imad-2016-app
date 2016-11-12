@@ -74,7 +74,7 @@ pool.query("SELECT * FROM test",function(err,result){
 app.get('/articles/:articleName',function(req,res){
     
     var articleName=req.params.articleName;
-    pool.query("SELECT * FROM article where title="+req.params.articleName,function(err,result){
+    pool.query("SELECT * FROM article where title= '"+req.params.articleName+"'",function(err,result){
     if(err){
         res.status(500).send(err.toString());
     }else{
