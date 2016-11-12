@@ -106,7 +106,6 @@ function createTemplate(data)
     
 }
 
-app.get('/ui/profile.html', function (req, res) { res.send(createTemplate());
 
 
 
