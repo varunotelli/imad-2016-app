@@ -69,6 +69,12 @@ pool.query("SELECT * FROM test",function(err,result){
 });
 });
 
+function hash(input,salt)
+{
+    var hashed=crypto.pbkdf2Sync('secret', 'salt', 100000, 512, 'sha512');
+    return hashed.toString('hex');
+}
+
 
 app.get('/user/:input',function(req,res){
     var hashedString=hash(req.params.input,"random string");
