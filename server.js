@@ -125,13 +125,13 @@ app.get('/user',function(req,res){
 
 app.get('/signup',function(req,res){
     
-    var username=req.body.username;
+    var username=req.body.Username;
     var password=req.body.password;
     var email=req.body.email;
     var salt=crypto.randomBytes(128).toString('hex');
     var dbString=hash(password,salt);
     
-    pool.query('insert into "user" (Username,Password,email,type) values($1,$2,$3,$4)',[Username,dbString,email,'A'],function(err,result){
+    pool.query('insert into "user" (Username,Password,email,type) values($1,$2,$3,$4)',[username,dbString,email,'A'],function(err,result){
     if(err){
         res.status(500).send(err.toString());
     }else{
