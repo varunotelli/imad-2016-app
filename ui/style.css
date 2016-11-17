@@ -6,6 +6,15 @@
     margin-left:20px;
 }
 
+#blogotron img{
+    float:left;
+    margin-top: 4px;
+}
+
+
+#blogtxt{
+    float:right;
+}
 
 #signin
 {

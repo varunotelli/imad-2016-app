@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+}
+
+#blogotron 
+{
+    color: white;
+    font-size: 5vw;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 5px;
+    float: right;
+}
+
+#logo{
+    float:left;
+}
+.navbar-default
+{
+    background: #252525;
+
+    
+}
+
+#profile
+{
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+.navbar-nav{
+    color:white;
+    
+    
+    
+}
+.navbar-header
+{
+
+
+}
+.dropdown-menu
+{
+
+background: #252525;
+color: white;
+border-color: white;
+padding: 5px;
+font-size: 0.75vw;
+text-align: center;
+}
+
+
+#nav-list a
+    {
+    text-align: center;
+    
+    margin: 5px;
+    color:white;
+    padding: 5px;
+    font-size: 1.5em;
+    
+}
+
+#nav-list div
+    {
+    text-align: center;
+    
+    margin-right: 10px;
+    color:white;
+    padding: 5px;
+    font-size: 1.5em;
+    
+}
+
+#nav-list button
+    {
+    text-align: center;
+    float: left;
+    margin-left: 5px;
+    color:white;
+    padding: 5px;
+    border: 1px solid white;
+    margin-top:35px;
+    background-color: yellow;
+    color:black;
+    font-weight: bold;
+}
+
+
+
+.navbar-right
+{
+    float:right;
+}
+
+.container-fluid
+{
+
+}
+
+/*end of header*/
+
+
+body
+{
+    background-image: url('http://www.landscapes.org/london/wp-content/uploads/sites/8/2015/09/roadmap-to-landscapes-finance.jpg');
+
+}
+
+#post-blog
+{
+    width: 600px;
+    margin-left: 250px;
+    margin-bottom: 20px;
+    
+    margin-top: 100px;
+
+
+
+    
+}
+
+#titletxt,#content
+{
+   
+    font-weight: bold;
+     margin-bottom: 20px;
+    opacity: 0.7;
+    box-shadow: 0 0 50px black;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+    color: black;
+}
+
+#post-blog button
+{
+
+   float: right;
+   box-shadow: box-shadow: 0 0 30px black;
+  
+
+
+}
