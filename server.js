@@ -54,6 +54,8 @@ app.get('/ui/bgimg.jpg', function (req, res) { res.sendFile(path.join(__dirname,
 
 app.get('/ui/profilecss.css', function (req, res) { res.sendFile(path.join(__dirname, 'ui', 'profilecss.css')); });
 
+app.get('/ui/blogstyle.css', function (req, res) { res.sendFile(path.join(__dirname, 'ui', 'blogstyle.css')); });
+
 app.get('/ui/profile.html', function (req, res) { res.sendFile(path.join(__dirname, 'ui', 'profile.html')); });
 
 app.get('/ui/create-blog.html', function (req, res) { res.sendFile(path.join(__dirname, 'ui', 'create-blog.html')); });
