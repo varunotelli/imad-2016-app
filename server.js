@@ -26,12 +26,12 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-app.get('/ui/favicon-60.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'favicon-60.jpg'));
+app.get('/ui/favicon-60.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'favicon-60.png'));
 });
 
-app.get('/ui/favicon-57.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'favicon-57.jpg'));
+app.get('/ui/favicon-57.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'favicon-57.png'));
 });
 
 
