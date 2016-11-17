@@ -7,7 +7,7 @@ signup.onclick=function()
         if(request.readyState===XMLHttpRequest.DONE)
         {
             if(request.status===200)
-            window.location.href='http://varunotelli.imad.hasura-app.io/ui/profile.html'
+            window.location.href='http://varunotelli.imad.hasura-app.io/ui/profile.html';
             else
             alert('problem');
         }
@@ -42,7 +42,7 @@ signup.onclick=function()
         if(request.readyState===XMLHttpRequest.DONE)
         {
             if(request.status===200)
-            window.location.href='http://varunotelli.imad.hasura-app.io/ui/profile.html'
+            window.location.href='http://varunotelli.imad.hasura-app.io/ui/profile.html';
             else
             alert('problem');
         }
