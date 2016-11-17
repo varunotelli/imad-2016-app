@@ -50,7 +50,7 @@ signup.onclick=function()
 
 
 
-var title=document.getElementById('titletxt').value;
+/*var title=document.getElementById('titletxt').value;
 console.log(title);
 var content=document.getElementById('content').value;
 console.log(content);
@@ -62,3 +62,4 @@ request.send(JSON.stringify({title:title,content:content}));
 
 
 };
+*/
