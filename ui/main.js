@@ -50,7 +50,7 @@ signup.onclick=function()
 
 
 
-/*var title=document.getElementById('titletxt').value;
+var title=document.getElementById('titletxt').value;
 console.log(title);
 var content=document.getElementById('content').value;
 console.log(content);
@@ -59,6 +59,6 @@ console.log(content);
 request.open('POST','http://varunotelli.imad.hasura-app.io/create-blog',true);
 request.setRequestHeader('Content-Type','application/json');
 request.send(JSON.stringify({title:title,content:content}));
-*/
+
 
 };
