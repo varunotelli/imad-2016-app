@@ -25,6 +25,7 @@ request.open('POST','http://varunotelli.imad.hasura-app.io/signup',true);
 request.setRequestHeader('Content-Type','application/json');
 request.send(JSON.stringify({username:username,password:password,email:email}));
 
+<<<<<<< HEAD
 };
 
 
@@ -59,4 +60,6 @@ request.open('POST','http://varunotelli.imad.hasura-app.io/create-blog',true);
 request.setRequestHeader('Content-Type','application/json');
 request.send(JSON.stringify({title:title,content:content}));
 
+=======
+>>>>>>> 7edeb48ecfbeba17a0e322e5a87dabec50a4cd5f
 };
