@@ -59,7 +59,6 @@ console.log(content);
 request.open('POST','http://varunotelli.imad.hasura-app.io/create-blog',true);
 request.setRequestHeader('Content-Type','application/json');
 request.send(JSON.stringify({title:title,content:content}));
-
+*/
 
 };
-*/
