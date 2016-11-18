@@ -174,7 +174,8 @@ app.post('/signin', function (req, res) {
               // Match the password
               var dbString = result.rows[0].password;
               var salt = dbString.split('$')[2];
-              var hashedpass = hash(password, salt); // Creating a hash based on the password submitted and the original salt
+              var hashedpass = hash(password, salt); 
+              res.send(hashedpass);
               if (hashedpass === dbString) {
                 
                
