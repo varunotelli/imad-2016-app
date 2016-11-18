@@ -187,7 +187,7 @@ app.post('/signup',function(req,res){
     }
 });
 });
-
+*/
 
 function createTemplate(data)
 {
@@ -221,7 +221,7 @@ res.send(counter.toString());
 
 
 
-*/
+
 
 
 
