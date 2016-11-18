@@ -69,78 +69,7 @@ app.listen(8080, function () {
 
 
 
-
-
-
-
-var pool = new Pool(config);
-app.get('/test-db',function(req,res){
-//make a select response
-////return a response with results
-pool.query("SELECT * FROM test",function(err,result){
-    if(err){
-        res.status(500).send(err.toString());
-    }else{
-        res.send(JSON.stringify(result));
-    }
-    
-});
-});
-
-var pool = new Pool(config);
-
-function hash(input,salt)
-{
-    var hashed=crypto.pbkdf2Sync('secret', 'salt', 10000, 512, 'sha512');
-    return["pbkdf2","10000",salt,hashed.toString('hex')].join('$');
-}
-
-
-app.get('/user/:input',function(req,res){
-    var hashedString=hash(req.params.input,"random string");
-    res.send(hashedString);
-});
-
-
-
-
-app.get('/articles/:articleName',function(req,res){
-    
-    var articleName=req.params.articleName;
-    pool.query("SELECT * FROM article where title=$1",[req.params.articleName],function(err,result){
-    if(err){
-        res.status(500).send(err.toString());
-    }else{
-        if(result.rows.length===0)
-        {
-            res.status(404).send('Article not found');
-        }
-        else
-        {
-            var articleDate=result.rows[0];
-            res.send(createTemplate(articleDate));
-        }
-    }
-    
-});
-});
-
-
-    
-app.get('/user',function(req,res){
-    
-    pool.query("SELECT * from user",function(err,result){
-        if(err)
-        res.status(500).send(err.toString());
-        else
-        res.send(JSON.stringify(result));
-        
-    });
-    
-});
-
-
-/*app.post('/signup',function(req,res){
+app.post('/signup',function(req,res){
     
     var username=req.body.username;
     var password=req.body.password;
@@ -157,7 +86,7 @@ app.get('/user',function(req,res){
     
 });
 });
-*/
+
 
 /*app.post('/signin',function(req,res){
     
@@ -220,6 +149,13 @@ app.get('/counter',function(req,res){
 counter=counter+1; 
 res.send(counter.toString());
 });
+
+
+
+
+
+
+
 
 
 
