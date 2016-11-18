@@ -124,7 +124,9 @@ function loggedinUser()
         {
             if(request.status===200)
             {
-                console.log('in func');
+                
+                console.log("yes");
+              /*  console.log('in func');
                 var user=request.responseText;
                 alert(user);
               usertxt.innerHTML=` <li id="usertxt" class="dropdown">
@@ -140,6 +142,7 @@ function loggedinUser()
             
                 </ul>
             </li>`;
+            */
             }
               else
               console.log("nope");
