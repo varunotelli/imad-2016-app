@@ -58,7 +58,11 @@ signup.onclick=function()
         if(request.readyState===XMLHttpRequest.DONE)
         {
             if(request.status===200)
-            alert("User created successfully")
+            {
+                alert("User created successfully");
+                window.location.href="http://varunotelli.imad.hasura-app.io/ui/profile.html"
+            
+            }
             else
             alert('problem');
         }
