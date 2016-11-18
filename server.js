@@ -83,7 +83,7 @@ pool.query("SELECT * FROM test",function(err,result){
 
 
 
-/*
+
 function hash(input,salt)
 {
     var hashed=crypto.pbkdf2Sync('secret', 'salt', 10000, 512, 'sha512');
@@ -135,7 +135,7 @@ app.get('/user',function(req,res){
     
 });
 
-
+/*
 app.post('/signup',function(req,res){
     
     var username=req.body.username;
@@ -188,7 +188,7 @@ app.post('/signin',function(req,res){
 });
 });
 
-
+*/
 function createTemplate(data)
 {
     var title=data.title;
@@ -219,7 +219,7 @@ res.send(counter.toString());
 
 
 
-*/
+
 
 
 
