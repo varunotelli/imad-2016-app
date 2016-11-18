@@ -14,6 +14,7 @@ var config = {
   port:'5432'
   
 };
+
 var app = express();
 app.use(morgan('combined'));
 app.use(bodyParser.json());
