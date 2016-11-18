@@ -197,7 +197,7 @@ app.post('/signin', function (req, res) {
 app.get('/logout',function(req,res)
 {
     delete req.session.auth;
-    res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+    
     
     
 });
