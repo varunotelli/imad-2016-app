@@ -152,28 +152,29 @@ app.post('/signin',function(req,res){
         res.status(500).send(err.toString());
     }
     else{
-        if(result.rows.length===0)
-        {
-            res.status(403).send('Username or Password incorrect');
+            if(result.rows.length===0)
+                {
+                    res.status(403).send('Username or Password incorrect');
             
-        }
+                }
             
-        else
-        {
-            var dbstring=result.rows[0].password;
-            //res.send(dbstring);
-            var salt=dbstring.split('$')[2];
-            var hashedpass=hash(password,salt);
-            //res.send(hashedpass);
-            if(hashedpass===dbstring)
-            {
-                res.status(200).send('Works');
-            }
             else
-             res.status(403).send('Username or Password incorrect');
+                {
+                var dbstring=result.rows[0].password;
+                //res.send(dbstring);
+                var salt=dbstring.split('$')[2];
+                var hashedpass=hash(password,salt);
+                //res.send(hashedpass);
+                if(hashedpass===dbstring)
+                    {
+                        res.status(200).send('Works');
+                    }
+                else
+                         res.status(403).send('Username or Password incorrect');
+                }
             
         }
-    }
+    
 });
 });
 
