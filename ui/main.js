@@ -44,7 +44,7 @@ request.send(null);
    console.log("loaded");
  
     
-};
+}
 
 
 loggedinUser();
