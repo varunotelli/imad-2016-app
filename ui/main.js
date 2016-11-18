@@ -95,3 +95,20 @@ request.send(JSON.stringify({title:title,content:content}));
 
 
 
+var logout=document.getElementById('logout');
+logout.onclick=function()
+{
+     var request=new XMLHttpRequest();
+    request.onreadystatechange=function(){
+        if(request.readyState===XMLHttpRequest.DONE)
+        {
+            if(request.status===200)
+            window.location.href='http://varunotelli.imad.hasura-app.io/';
+            else
+            alert('problem');
+        }
+        
+    };
+request.open('GET','http://varunotelli.imad.hasura-app.io/logout');
+request.send('Logged out');
+};
