@@ -123,6 +123,8 @@ function loggedinUser()
         {
             if(request.status===200)
               usertxt.innerHTML=`<div class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><br class="hidden-xs">${user}<span class="caret"></span></div>`;
+              else
+              console.log("nope");
             
         }
         
