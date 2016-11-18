@@ -59,8 +59,8 @@ signup.onclick=function()
         {
             if(request.status===200)
             {
-                alert("User created successfully");
-                window.location.href="http://varunotelli.imad.hasura-app.io/ui/profile.html"
+                alert("User created Successfully! Login to continue!");
+                //window.location.href="http://varunotelli.imad.hasura-app.io/ui/profile.html"
             
             }
             else
@@ -157,7 +157,7 @@ logout.onclick=function()
         if(request.readyState===XMLHttpRequest.DONE)
         {
             if(request.status===200)
-            alert("User created Successfully! Login to continue!")
+            res.send("<h1>LOGGED OUT</h1><br>click<a href='http://varunotelli.imad.hasura-app.io/>here </a> to login")
             else
             alert('problem');
         }
