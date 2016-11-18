@@ -116,13 +116,14 @@ function loggedinUser()
 {
     var usertxt=document.getElementById('nav-list');
     
-    console.log(user);
+   // console.log(user);
      var request=new XMLHttpRequest();
     request.onreadystatechange=function(){
         if(request.readyState===XMLHttpRequest.DONE)
         {
             if(request.status===200)
             {
+                console.log('in func');
                 var user=request.responseText;
               usertxt.innerHTML=` <li id="usertxt" class="dropdown">
                 <div class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><br class="hidden-xs">${user}<span class="caret"></span></div>
