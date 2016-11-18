@@ -69,7 +69,7 @@ app.listen(8080, function () {
 
 
 
-
+/*
 
 var pool = new Pool(config);
 app.get('/test-db',function(req,res){
@@ -85,7 +85,7 @@ pool.query("SELECT * FROM test",function(err,result){
 });
 });
 
-
+*/
 
 
 
@@ -125,7 +125,7 @@ app.get('/articles/:articleName',function(req,res){
 });
 });
 
-
+/*
     
 app.get('/user',function(req,res){
     
@@ -139,6 +139,7 @@ app.get('/user',function(req,res){
     });
     
 });
+*/
 
 app.post('/signup',function(req,res){
     
@@ -159,43 +160,39 @@ app.post('/signup',function(req,res){
 });
 
 
-app.post('/signin',function(req,res){
-    
-    var username=req.body.username;
-    var password=req.body.password;
-    //res.send(password);
+app.post('/login', function (req, res) {
+   var username = req.body.username;
+   var password = req.body.password;
    
-    
-    pool.query('SELECT * FROM "user" where username=$1',[username],function(err,result){
-    if(err){
-        res.status(500).send(err.toString());
-    }
-    else{
-            if(result.rows.length===0)
-                {
-                    res.status(403).send('Username or Password incorrect');
-            
-                }
-            
-            else
-                {
-                var dbstring=result.rows[0].password;
-                //res.send(dbstring);
-                var salt=dbstring.split('$')[2];
-                var hashedpass=hash(password,salt);
-                //res.send(hashedpass);
-                if(hashedpass===dbstring)
-                    {
-                        res.status(200).send('Works');
-                    }
-                else
-                         res.status(403).send('Username or Password incorrect');
-                }
-            
-        }
-    
+   pool.query('SELECT * FROM "user" WHERE username = $1', [username], function (err, result) {
+      if (err) {
+          res.status(500).send(err.toString());
+      } else {
+          if (result.rows.length === 0) {
+              res.status(403).send('username/password is invalid');
+          } else {
+              // Match the password
+              var dbString = result.rows[0].password;
+              var salt = dbString.split('$')[2];
+              var hashedPassword = hash(password, salt); // Creating a hash based on the password submitted and the original salt
+              if (hashedPassword === dbString) {
+                
+                // Set the session
+                //req.session.auth = {userId: result.rows[0].id};
+                // set cookie with a session id
+                // internally, on the server side, it maps the session id to an object
+                // { auth: {userId }}
+                
+                res.send('credentials correct!');
+                
+              } else {
+                res.status(403).send('username/password is invalid');
+              }
+          }
+      }
+   });
 });
-});
+
 
 
 
