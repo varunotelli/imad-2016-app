@@ -1,6 +1,6 @@
  function loggedinUser()
 {
- /*   
+    
     var usertxt=document.getElementById('blogotron');
     console.log('in func');
    // console.log(user);
@@ -39,7 +39,7 @@
     
 request.open('GET','http://varunotelli.imad.hasura-app.io/check-login');
 request.send(null);
-  */
+  
    console.log("loaded");
  
     
