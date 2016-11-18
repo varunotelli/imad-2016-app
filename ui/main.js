@@ -29,7 +29,7 @@ request.send(JSON.stringify({username:username,password:password,email:email}));
 };
 
 var signin=document.getElementById('signinbtn');
-signup.onclick=function()
+signin.onclick=function()
 {
     console.log('in func');
     var request=new XMLHttpRequest();
