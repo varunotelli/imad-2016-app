@@ -33,7 +33,7 @@ request.send(JSON.stringify({username:username,password:password,email:email}));
 
 
 
-var submit=document.getElementById('submit');
+/*var submit=document.getElementById('submit');
 signup.onclick=function()
 {
     //console.log('in func');
@@ -62,3 +62,4 @@ request.send(JSON.stringify({title:title,content:content}));
 
 
 };
+*/
