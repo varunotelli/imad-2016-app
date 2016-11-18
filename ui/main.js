@@ -20,9 +20,9 @@
                 <div class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><br class="hidden-xs">${user}<span class="caret"></span></div>
                 <ul class="dropdown-menu">
 
-                    <li><a href="/ui/profile.html">PROFILE</a></li>
+                    <li><a href="/ui/profile.html">HOME</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#">ACCOUNT</a></li>
+                    <li><a href="#">ABOUT</a></li>
                     <li role="separator" class="divider"></li>
                     <li><a id="logout" href="/logout">SIGN OUT</a></li>
             
