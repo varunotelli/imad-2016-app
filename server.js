@@ -194,7 +194,13 @@ app.post('/signin', function (req, res) {
 });
 
 
-
+app.get('/logout',function(req,res)
+{
+    delete req.session.auth;
+    window.location.href='http://varunotelli.imad.hasura-app.io/';
+    
+    
+});
 
 
 
