@@ -193,7 +193,7 @@ app.post('/signin', function (req, res) {
    });
 });
 
-/*
+
 app.get('/logout',function(req,res)
 {
     delete req.session.auth;
@@ -202,7 +202,7 @@ app.get('/logout',function(req,res)
     
 });
 
-*/
+
 
 
 
