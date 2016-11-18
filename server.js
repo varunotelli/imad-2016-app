@@ -4,7 +4,7 @@ var path = require('path');
 var Pool = require('pg').Pool;
 var crypto=require('crypto');
 var bodyParser=require('body-parser');
-
+var session=require('express-session');
 
 var config = {
   host:'db.imad.hasura-app.io',
@@ -18,6 +18,10 @@ var config = {
 var app = express();
 app.use(morgan('combined'));
 app.use(bodyParser.json());
+app.use(session({
+    secret:'randomval',
+    age: {maxAge:1000*60*60*24*30}
+}));
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
@@ -178,7 +182,7 @@ app.post('/signin', function (req, res) {
               //res.send(hashedpass);
               if (hashedpass === dbString) {
                 
-               
+               req.session.auth={userId:result.rows[0].id};
                 res.send('credentials correct!');
                 
               } else {
