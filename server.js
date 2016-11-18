@@ -165,7 +165,15 @@ app.post('/signup',function(req,res){
     
 });
 
-
+pool.query('SELECT * FROM "user" WHERE username = $1', [username], function (err, result)
+{
+    if (err) {
+          res.status(500).send(err.toString());
+      }
+      else{
+           req.session.auth={userId:result.rows[0].id};
+      }
+});
 });
 
 
