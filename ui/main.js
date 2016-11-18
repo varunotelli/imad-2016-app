@@ -109,5 +109,5 @@ logout.onclick=function()
         
     };
 request.open('GET','http://varunotelli.imad.hasura-app.io/logout');
-request.send('Logged out');
+request.send('<h1>Logged out</h1><br>click <a href="/ui/index.html">here </a> to return to homepage');
 };
