@@ -167,7 +167,7 @@ app.post('/signin',function(req,res){
             //res.send(hashedpass);
             if(hashedpass===dbstring)
             {
-                //res.send('Works');
+                res.status(200).send('Works');
             }
             else
              res.status(403).send('Username or Password incorrect');
