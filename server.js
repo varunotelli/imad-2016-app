@@ -89,8 +89,8 @@ pool.query("SELECT * FROM test",function(err,result){
 
 function hash(input,salt)
 {
-    var hashed=crypto.pbkdf2Sync('secret', 'salt', 10000, 512, 'sha512');
-    return["pbkdf2","10000",salt,hashed.toString('hex')].join('$');
+    var hashed=crypto.pbkdf2Sync('secret', 'salt', 100000, 512, 'sha512');
+    return["pbkdf2","100000",salt,hashed.toString('hex')].join('$');
 }
 
 
