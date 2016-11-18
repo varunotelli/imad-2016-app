@@ -159,7 +159,7 @@ app.post('/signin',function(req,res){
     
     var username=req.body.username;
     var password=req.body.password;
-    var email=req.body.email;
+    
    
     
     pool.query('SELECT * FROM "user" where username=$1',[username],function(err,result){
