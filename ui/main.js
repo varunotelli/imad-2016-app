@@ -115,7 +115,7 @@ request.send(null);
 function loggedinUser()
 {
     
-    var usertxt=document.getElementById('nav-list');
+    var usertxt=document.getElementById('blogotron');
     console.log('in func');
    // console.log(user);
      var request=new XMLHttpRequest();
