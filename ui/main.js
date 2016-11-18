@@ -1,7 +1,7 @@
  function loggedinUser()
 {
     
-    var usertxt=document.getElementById('blogotron');
+    var usertxt=document.getElementById('nav-list');
     console.log('in func');
    // console.log(user);
      var request=new XMLHttpRequest();
