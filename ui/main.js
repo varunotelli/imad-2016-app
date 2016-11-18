@@ -114,7 +114,7 @@ request.send(null);
 
 function loggedinUser()
 {
-    var usertxt=document.getElementById('usertxt');
+    var usertxt=document.getElementById('nav-list');
     
     console.log(user);
      var request=new XMLHttpRequest();
