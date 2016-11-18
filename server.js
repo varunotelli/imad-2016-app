@@ -91,16 +91,16 @@ function hash(input,salt)
     return["pbkdf2","10000",salt,hashed.toString('hex')].join('$');
 }
 
-
+/*
 app.get('/user/:input',function(req,res){
     var hashedString=hash(req.params.input,"random string");
     res.send(hashedString);
 });
 
 
+*/
 
-
-app.get('/articles/:articleName',function(req,res){
+/*app.get('/articles/:articleName',function(req,res){
     
     var articleName=req.params.articleName;
     pool.query("SELECT * FROM article where title=$1",[req.params.articleName],function(err,result){
@@ -120,6 +120,7 @@ app.get('/articles/:articleName',function(req,res){
     
 });
 });
+*/
 
 /*
     
