@@ -109,5 +109,28 @@ logout.onclick=function()
         
     };
 request.open('GET','http://varunotelli.imad.hasura-app.io/logout');
-request.send('<h1>Logged out</h1><br>click <a href="/ui/index.html">here </a> to return to homepage');
+request.send(null);
 };
+
+function loggedinUser()
+{
+    var usertxt=document.getElementById('usertxt');
+    
+     var request=new XMLHttpRequest();
+    request.onreadystatechange=function(){
+        if(request.readyState===XMLHttpRequest.DONE)
+        {
+            if(request.status===200)
+              usertxt.innerHTML=`${this.responseText}`
+            
+        }
+        
+    };
+request.open('GET','http://varunotelli.imad.hasura-app.io/check-login');
+request.send(null);
+  
+    
+    
+}
+
+
