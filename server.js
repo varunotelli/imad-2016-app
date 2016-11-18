@@ -67,6 +67,7 @@ app.listen(8080, function () {
 
 
 
+
 var pool = new Pool(config);
 app.get('/test-db',function(req,res){
 //make a select response
@@ -80,16 +81,6 @@ pool.query("SELECT * FROM test",function(err,result){
     
 });
 });
-
-
-
-
-
-function hash(input,salt)
-{
-    var hashed=crypto.pbkdf2Sync('secret', 'salt', 10000, 512, 'sha512');
-    return["pbkdf2","10000",salt,hashed.toString('hex')].join('$');
-}
 
 /*
 app.get('/user/:input',function(req,res){
@@ -137,6 +128,18 @@ app.get('/user',function(req,res){
     
 });
 */
+
+
+
+
+
+function hash(input,salt)
+{
+    var hashed=crypto.pbkdf2Sync('secret', 'salt', 10000, 512, 'sha512');
+    return["pbkdf2","10000",salt,hashed.toString('hex')].join('$');
+}
+
+
 
 app.post('/signup',function(req,res){
     
