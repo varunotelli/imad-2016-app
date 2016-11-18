@@ -156,7 +156,7 @@ app.post('/signup',function(req,res){
 });
 
 
-/*app.post('/signin',function(req,res){
+app.post('/signin',function(req,res){
     
     var username=req.body.username;
     var password=req.body.password;
@@ -188,7 +188,7 @@ app.post('/signup',function(req,res){
     }
 });
 });
-*/
+
 function createTemplate(data)
 {
     var title=data.title;
