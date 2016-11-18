@@ -114,7 +114,7 @@ request.send(null);
 
 function loggedinUser()
 {
-    
+ /*   
     var usertxt=document.getElementById('blogotron');
     console.log('in func');
    // console.log(user);
@@ -126,7 +126,7 @@ function loggedinUser()
             {
                 
                 console.log("yes");
-              /*  console.log('in func');
+               console.log('in func');
                 var user=request.responseText;
                 alert(user);
               usertxt.innerHTML=` <li id="usertxt" class="dropdown">
@@ -142,7 +142,7 @@ function loggedinUser()
             
                 </ul>
             </li>`;
-            */
+            
             }
               else
               console.log("nope");
@@ -150,11 +150,11 @@ function loggedinUser()
             
         }
         
-    };
+    
 request.open('GET','http://varunotelli.imad.hasura-app.io/check-login');
 request.send(null);
-  
-    
+  */
+    console.log("loaded");
     
 }
 
