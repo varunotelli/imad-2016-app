@@ -73,19 +73,6 @@ text-align: center;
 	
 }
 
-#nav-list button
-	{
-	text-align: center;
-	float: left;
-	margin-left: 5px;
-	color:white;
-	padding: 5px;
-	border: 1px solid white;
-	margin-top:55px;
-	background-color: yellow;
-	color:black;
-	font-weight: bold;
-}
 
 
 
@@ -94,10 +81,6 @@ text-align: center;
 	float:right;
 }
 
-.container-fluid
-{
-
-}
 
 /*end of header*/
 
@@ -108,7 +91,7 @@ text-align: center;
 	height: 200px;
 	width: 200px;
 	margin-left: 80px;
-	padding:0px;
+	padding:0;
 	overflow:hidden;
 	border-radius:10px;
 	
