@@ -189,33 +189,6 @@ app.post('/signin',function(req,res){
 });
 
 */
-function createTemplate(data)
-{
-    var title=data.title;
-    var content=data.content;
-    var posted=data.posted;
-    var htmlTemplate=
-    
-        `
-        <html>        
-        <h1>
-        ${title}
-        </h1>
-        <p>${content}</p>
-        <br>
-        <div>Posted on: ${posted.toDateString()}</div>
-        `
-        
-        ;
-     return htmlTemplate;   
-    
-}
-
-var counter=0;
-app.get('/counter',function(req,res){
-counter=counter+1; 
-res.send(counter.toString());
-});
 
 
 
