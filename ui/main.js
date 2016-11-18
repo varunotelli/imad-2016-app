@@ -5,7 +5,8 @@
     console.log('in func');
    // console.log(user);
      var request=new XMLHttpRequest();
-    request.onreadystatechange=function(){
+    request.onreadystatechange=function()
+    {
         if(request.readyState===XMLHttpRequest.DONE)
         {
             if(request.status===200)
@@ -36,14 +37,14 @@
             
         }
         
-    
+    }
 request.open('GET','http://varunotelli.imad.hasura-app.io/check-login');
 request.send(null);
   
    console.log("loaded");
  
     
-}
+};
 
 
 loggedinUser();
