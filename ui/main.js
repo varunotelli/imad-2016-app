@@ -45,13 +45,12 @@ signup.onclick=function()
 
 
 
-var username=document.getElementById('usr').value;
+var username=document.getElementById('signin-usr').value;
 console.log(username);
-var password=document.getElementById('pwd').value;
+var password=document.getElementById('signin-pwd').value;
 console.log(password);
-var email=document.getElementById('email').value;
-console.log(email);
-request.open('POST','http://varunotelli.imad.hasura-app.io/signup',true);
+
+request.open('POST','http://varunotelli.imad.hasura-app.io/signin',true);
 request.setRequestHeader('Content-Type','application/json');
 request.send(JSON.stringify({username:username,password:password,email:email}));
 
