@@ -1,7 +1,7 @@
  function loggedinUser()
 {
     
-    var usertxt=document.getElementById('nav-list');
+    var usertxt=document.getElementById('collapse-nav');
     console.log('in func');
    // console.log(user);
      var request=new XMLHttpRequest();
