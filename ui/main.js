@@ -114,9 +114,9 @@ request.send(null);
 
 function loggedinUser()
 {
-    console.log('in func');
-    var usertxt=document.getElementById('nav-list');
     
+    var usertxt=document.getElementById('nav-list');
+    console.log('in func');
    // console.log(user);
      var request=new XMLHttpRequest();
     request.onreadystatechange=function(){
