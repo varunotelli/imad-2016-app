@@ -197,7 +197,7 @@ app.post('/signin', function (req, res) {
 app.get('/logout',function(req,res)
 {
     delete req.session.auth;
-    window.location.href='http://varunotelli.imad.hasura-app.io/ui/index.html';
+    res.sendFile(path.join(__dirname, 'ui', 'index.html'));
     
     
 });
