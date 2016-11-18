@@ -157,7 +157,7 @@ logout.onclick=function()
         if(request.readyState===XMLHttpRequest.DONE)
         {
             if(request.status===200)
-            window.location.href='http://varunotelli.imad.hasura-app.io/';
+            alert("User created Successfully! Login to continue!")
             else
             alert('problem');
         }
