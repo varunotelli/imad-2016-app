@@ -114,6 +114,7 @@ request.send(null);
 
 function loggedinUser()
 {
+    console.log('in func');
     var usertxt=document.getElementById('nav-list');
     
    // console.log(user);
