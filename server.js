@@ -87,6 +87,8 @@ pool.query("SELECT * FROM test",function(err,result){
 });
 });
 
+var pool = new Pool(config);
+
 function hash(input,salt)
 {
     var hashed=crypto.pbkdf2Sync('secret', 'salt', 10000, 512, 'sha512');
@@ -122,7 +124,8 @@ app.get('/articles/:articleName',function(req,res){
     
 });
 });
-    
+
+
     
 app.get('/user',function(req,res){
     
