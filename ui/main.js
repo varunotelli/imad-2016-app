@@ -1,3 +1,5 @@
+ console.log("loaded");
+
 var signup=document.getElementById('signupbtn');
 signup.onclick=function()
 {
@@ -157,6 +159,6 @@ request.send(null);
    
     
 }
- console.log("loaded");
+
 
 loggedinUser();
