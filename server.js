@@ -172,7 +172,7 @@ app.post('/signin',function(req,res){
         else
         {
             var dbstring=result.rows[0].password;
-            res.send(dbstring);
+            //res.send(dbstring);
             var salt=dbstring.split('$')[2];
             var hashedpass=hash(password,salt);
             res.send(hashedpass);
