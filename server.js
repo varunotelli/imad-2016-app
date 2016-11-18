@@ -154,6 +154,38 @@ app.post('/signup',function(req,res){
 });
 });
 
+
+app.post('/signin',function(req,res){
+    
+    var username=req.body.username;
+    var password=req.body.password;
+    var email=req.body.email;
+   
+    
+    pool.query('SELECT * FROM "user" where username=$1',[username],function(err,result){
+    if(err){
+        res.status(500).send(err.toString());
+    }
+    else{
+        if(result.rows.length===0)
+            res.status(403).send('Username or Password incorrect');
+        else
+        {
+            var dbstring=result.rows[0].password;
+            var salt=dbstring.split('$')[2];
+            var hashedpass=hash(password,salt);
+            if(hashedpass===dbstring)
+            {
+                res.send('Works');
+            }
+            else
+             res.status(403).send('Username or Password incorrect');
+            
+        }
+    }
+});
+});
+
 function createTemplate(data)
 {
     var title=data.title;
