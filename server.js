@@ -144,7 +144,7 @@ app.post('/signin',function(req,res){
     
     var username=req.body.username;
     var password=req.body.password;
-    res.send(password);
+    //res.send(password);
    
     
     pool.query('SELECT * FROM "user" where username=$1',[username],function(err,result){
@@ -167,7 +167,7 @@ app.post('/signin',function(req,res){
             //res.send(hashedpass);
             if(hashedpass===dbstring)
             {
-                res.send('Works');
+                //res.send('Works');
             }
             else
              res.status(403).send('Username or Password incorrect');
