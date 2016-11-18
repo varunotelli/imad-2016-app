@@ -1,4 +1,52 @@
- console.log("loaded");
+ function loggedinUser()
+{
+ /*   
+    var usertxt=document.getElementById('blogotron');
+    console.log('in func');
+   // console.log(user);
+     var request=new XMLHttpRequest();
+    request.onreadystatechange=function(){
+        if(request.readyState===XMLHttpRequest.DONE)
+        {
+            if(request.status===200)
+            {
+                
+                console.log("yes");
+               console.log('in func');
+                var user=request.responseText;
+                alert(user);
+              usertxt.innerHTML=` <li id="usertxt" class="dropdown">
+                <div class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><br class="hidden-xs">${user}<span class="caret"></span></div>
+                <ul class="dropdown-menu">
+
+                    <li><a href="/ui/profile.html">PROFILE</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">ACCOUNT</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a id="logout" href="/logout">SIGN OUT</a></li>
+            
+            
+                </ul>
+            </li>`;
+            
+            }
+              else
+              console.log("nope");
+              
+            
+        }
+        
+    
+request.open('GET','http://varunotelli.imad.hasura-app.io/check-login');
+request.send(null);
+  */
+   console.log("loaded");
+ 
+    
+}
+
+
+loggedinUser();
 
 var signup=document.getElementById('signupbtn');
 signup.onclick=function()
@@ -114,51 +162,3 @@ request.open('GET','http://varunotelli.imad.hasura-app.io/logout');
 request.send(null);
 };
 
-function loggedinUser()
-{
- /*   
-    var usertxt=document.getElementById('blogotron');
-    console.log('in func');
-   // console.log(user);
-     var request=new XMLHttpRequest();
-    request.onreadystatechange=function(){
-        if(request.readyState===XMLHttpRequest.DONE)
-        {
-            if(request.status===200)
-            {
-                
-                console.log("yes");
-               console.log('in func');
-                var user=request.responseText;
-                alert(user);
-              usertxt.innerHTML=` <li id="usertxt" class="dropdown">
-                <div class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><br class="hidden-xs">${user}<span class="caret"></span></div>
-                <ul class="dropdown-menu">
-
-                    <li><a href="/ui/profile.html">PROFILE</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">ACCOUNT</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a id="logout" href="/logout">SIGN OUT</a></li>
-            
-            
-                </ul>
-            </li>`;
-            
-            }
-              else
-              console.log("nope");
-              
-            
-        }
-        
-    
-request.open('GET','http://varunotelli.imad.hasura-app.io/check-login');
-request.send(null);
-  */
-   
-    
-}
-
-
-loggedinUser();
