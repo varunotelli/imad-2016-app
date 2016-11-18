@@ -197,7 +197,7 @@ app.post('/signin', function (req, res) {
 app.get('/logout',function(req,res)
 {
     delete req.session.auth;
-    res.send('Logged out');
+    res.send('<h1>Logged out</h1><br>click <a href="/ui/index.html">here </a> to return to homepage');
    
 });
 
