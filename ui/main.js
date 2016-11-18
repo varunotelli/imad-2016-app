@@ -15,7 +15,7 @@
                 console.log("yes");
                console.log('in func');
                 var user=request.responseText;
-                alert(user);
+                //alert(user);
               usertxt.innerHTML=` <li id="usertxt" class="dropdown">
                 <div class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><br class="hidden-xs">${user}<span class="caret"></span></div>
                 <ul class="dropdown-menu">
