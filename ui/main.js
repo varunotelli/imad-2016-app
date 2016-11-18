@@ -124,7 +124,19 @@ function loggedinUser()
             if(request.status===200)
             {
                 var user=request.responseText;
-              usertxt.innerHTML=`<div class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><br class="hidden-xs">${user}<span class="caret"></span></div>`;
+              usertxt.innerHTML=` <li id="usertxt" class="dropdown">
+                <div class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><br class="hidden-xs">${user}<span class="caret"></span></div>
+                <ul class="dropdown-menu">
+
+                    <li><a href="/ui/profile.html">PROFILE</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">ACCOUNT</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a id="logout" href="/logout">SIGN OUT</a></li>
+            
+            
+                </ul>
+            </li>`;
             }
               else
               console.log("nope");
