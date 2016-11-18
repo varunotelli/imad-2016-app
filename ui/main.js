@@ -159,3 +159,4 @@ request.send(null);
 }
 
 
+loggedinUser();
