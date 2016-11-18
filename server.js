@@ -66,23 +66,11 @@ app.listen(8080, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
 
-var pool = new Pool(config);
-app.get('/test-db',function(req,res){
-//make a select response
-////return a response with results
-pool.query("SELECT * FROM test",function(err,result){
-    if(err){
-        res.status(500).send(err.toString());
-    }else{
-        res.send(JSON.stringify(result));
-    }
-    
-});
-});
 
-/*
 
-var pool = new Pool(config);
+
+
+
 
 function hash(input,salt)
 {
@@ -218,9 +206,9 @@ res.send(counter.toString());
 });
 
 
+
+
 */
-
-
 
 
 
