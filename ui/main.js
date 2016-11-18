@@ -154,9 +154,9 @@ function loggedinUser()
 request.open('GET','http://varunotelli.imad.hasura-app.io/check-login');
 request.send(null);
   */
-    console.log("loaded");
+   
     
 }
-
+ console.log("loaded");
 
 loggedinUser();
