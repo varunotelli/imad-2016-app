@@ -66,7 +66,7 @@ app.listen(8080, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
 
-/*
+
 
 
 
@@ -220,7 +220,7 @@ counter=counter+1;
 res.send(counter.toString());
 });
 
-*/
+
 
 
 
