@@ -158,10 +158,7 @@ app.post('/signup',function(req,res){
         res.status(500).send(err.toString());
         
     }else{
-        req.session.auth={userId:result.rows[0].id};
-
         res.send('Success');
-        
     }
     
 });
