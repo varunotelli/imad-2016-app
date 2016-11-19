@@ -117,7 +117,7 @@ function createTemplate(data)
     
     <link href="https://fonts.googleapis.com/css?family=Prociono" rel="stylesheet">
 
-    <link href="/ui/profilecss.css" rel="stylesheet">
+    <link href="/ui/blogstyle.css" rel="stylesheet">
     
 
     <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
