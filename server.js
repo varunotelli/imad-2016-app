@@ -104,7 +104,7 @@ function createTemplate(data)
     var time=data.time;
     var htmlTemplate=
     `
-    <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
   <head>
 
@@ -112,9 +112,9 @@ function createTemplate(data)
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <link href="/ui/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
 
-    
+    <link href="profilecss.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Prociono" rel="stylesheet">
 
     <link href="/ui/profilecss.css" rel="stylesheet">
@@ -132,11 +132,10 @@ function createTemplate(data)
             <div class="navbar-header">
     
 
-            <a href="profile.html"><img src="/ui/favicon-57.png"><div id="blogotron" class="navbar-brand">LOGOTRON</div></a>
+            <a href="profile.html"><img src="favicon-57.png"><div id="blogotron" class="navbar-brand">LOGOTRON</div></a>
 
             
 
-               
             </div>
         
             <ul id="nav-list" class="nav navbar-nav navbar-right">
@@ -151,6 +150,7 @@ function createTemplate(data)
 
 
 </nav>
+
 
     <div class="container-fluid">
     <div class="jumbotron">
