@@ -163,7 +163,7 @@ function createTemplate(data)
 
 
         
-</div>
+
 </div>
 <script src="/ui/jquery-2.2.3.min.js"></script>
   <script src="/ui/bootstrap.min.js"></script>
