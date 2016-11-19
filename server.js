@@ -31,13 +31,7 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-app.get('/ui/favicon-60.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'favicon-60.png'));
-});
 
-app.get('/ui/favicon-57.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'favicon-57.png'));
-});
 
 
 app.get('/ui/jquery-2.2.3.min.js', function (req, res) { res.sendFile(path.join(__dirname, 'ui', 'jquery-2.2.3.min.js')); });
@@ -59,7 +53,7 @@ app.get('/ui/blogstyle.css', function (req, res) { res.sendFile(path.join(__dirn
 
 app.get('/ui/profile.html', function (req, res) { res.sendFile(path.join(__dirname, 'ui', 'profile.html')); });
 
-app.get('/ui/create-blog.html', function (req, res) { res.sendFile(path.join(__dirname, 'ui', 'create-blog.html')); });
+
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
@@ -122,7 +116,7 @@ function createTemplate(data)
     
             <div class="navbar-header">
     
-            <a href="profile.html"><div id="blogotron" class="navbar-brand">LOGOTRON</div></a>
+            <a href="profile.html"><div id="blogotron" class="navbar-brand">BLOGOTRON</div></a>
             
             </div>
         
