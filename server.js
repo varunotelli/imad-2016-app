@@ -160,6 +160,7 @@ function createTemplate(data)
         <center>
     <img src='${image}'>
     <br>
+    <br>
     <div>${content}</div>
     <br>
     <h6>${time}</h6>
