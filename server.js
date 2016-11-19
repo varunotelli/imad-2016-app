@@ -60,7 +60,7 @@ app.listen(8080, function () {
 var pool = new Pool(config);
 
 
-
+/*
 function createTemplate(data)
 {
     var title=data.title;
@@ -170,7 +170,7 @@ app.get('/articles/:articleName',function(req,res){
 });
 
 
-
+*/
 
 
 
