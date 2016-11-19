@@ -108,7 +108,7 @@ function createTemplate(data)
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <title>${title}</title>
     <link href="/ui/bootstrap.min.css" rel="stylesheet">
     
     <link href="https://fonts.googleapis.com/css?family=Prociono" rel="stylesheet">
@@ -122,7 +122,7 @@ function createTemplate(data)
     
             <div class="navbar-header">
     
-            <a href="profile.html"><img src="/ui/favicon-57.png"><div id="blogotron" class="navbar-brand">LOGOTRON</div></a>
+            <a href="profile.html"><div id="blogotron" class="navbar-brand">LOGOTRON</div></a>
             
             </div>
         
@@ -183,21 +183,7 @@ app.get('/articles/:articleName',function(req,res){
 });
 
 
-/*
-    
-app.get('/user',function(req,res){
-    
-    pool.query("SELECT * from user",function(err,result){
-        if(err)
-        res.status(500).send(err.toString());
-        else
-        
-        res.send(JSON.stringify(result));
-        
-    });
-    
-});
-*/
+
 
 
 
