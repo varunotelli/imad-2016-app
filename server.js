@@ -210,7 +210,7 @@ function hash(input,salt)
 }
 
 
-
+/*Started
 app.post('/signup',function(req,res){
     
     var username=req.body.username;
@@ -234,7 +234,7 @@ app.post('/signup',function(req,res){
  
 });
 
-/*Started
+
 app.post('/signin', function (req, res) {
    var username = req.body.username;
    var password = req.body.password;
@@ -263,7 +263,7 @@ app.post('/signin', function (req, res) {
       }
    });
 });
-
+Ended*/
 app.get('/check-login', function (req, res) {
    if (req.session && req.session.auth && req.session.auth.userId) {
        // Load the user object
@@ -285,7 +285,7 @@ app.get('/logout',function(req,res)
     res.send('<h1>Logged out</h1><br>click <a href="/">here </a> to return to homepage');
    
 });
-Ended*/
+
 
 
 
