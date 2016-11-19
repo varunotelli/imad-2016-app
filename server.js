@@ -31,12 +31,6 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-
-app.get('/ui/favicon-57.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'favicon-57.png'));
-});
-
-
 app.get('/ui/jquery-2.2.3.min.js', function (req, res) { res.sendFile(path.join(__dirname, 'ui', 'jquery-2.2.3.min.js')); });
 
 app.get('/ui/bootstrap.min.js', function (req, res) { res.sendFile(path.join(__dirname, 'ui', 'bootstrap.min.js')); });
