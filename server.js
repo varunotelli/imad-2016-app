@@ -157,8 +157,8 @@ function createTemplate(data)
     
         <center><h2><b>FEATURED ARTICLES</b></h2></center>
         <br>
-        <div class="panel panel-default">
-            <div class="panel-content">${title}</div>
+        
+            <div>${title}</div>
 
 
 
