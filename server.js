@@ -58,27 +58,8 @@ app.listen(8080, function () {
 });
 
 var pool = new Pool(config);
-app.get('/test-db',function(req,res){
-//make a select response
-////return a response with results
-pool.query("SELECT * FROM test",function(err,result){
-    if(err){
-        res.status(500).send(err.toString());
-    }else{
-        res.send(JSON.stringify(result));
-    }
-    
-});
-});
-
-/*
-app.get('/user/:input',function(req,res){
-    var hashedString=hash(req.params.input,"random string");
-    res.send(hashedString);
-});
 
 
-*/
 
 function createTemplate(data)
 {
