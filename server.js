@@ -104,7 +104,7 @@ function createTemplate(data)
     var time=data.time;
     var htmlTemplate=
     `
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
 
@@ -150,6 +150,7 @@ function createTemplate(data)
 
 
 </nav>
+
 
 
     <div class="container-fluid">
