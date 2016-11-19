@@ -95,7 +95,92 @@ app.get('/user/:input',function(req,res){
 
 */
 
-/*app.get('/articles/:articleName',function(req,res){
+function createTemplate(data)
+{
+    var title=data.title;
+    var heading=data.heading;
+    var image=data.image;
+    var content=data.content;
+    var time=data.time;
+    var htmlTemplate=
+    `
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <link href="profilecss.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Prociono" rel="stylesheet">
+
+    <link href="/ui/profilecss.css" rel="stylesheet">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+
+    </head>
+<body>
+<nav  class="navbar navbar-default">
+        <div class="container-fluid">
+
+
+    
+            <div class="navbar-header">
+    
+
+            <a href="profile.html"><img src="favicon-57.png"><div id="blogotron" class="navbar-brand">LOGOTRON</div></a>
+
+            
+
+               
+            </div>
+        
+            <ul id="nav-list" class="nav navbar-nav navbar-right">
+                
+               
+            
+                
+            </ul>
+       
+    </div>
+
+
+
+</nav>
+
+    <div class="container-fluid">
+    <div class="jumbotron">
+        <center><h2><b>FEATURED ARTICLES</b></h2></center>
+        <br>
+        <div class="panel panel-default">
+            <div class="panel-content">
+            <h2>${title}</h2>
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+    
+     ` ; 
+     return htmlTemplate;   
+    
+}
+
+
+app.get('/articles/:articleName',function(req,res){
     
     var articleName=req.params.articleName;
     pool.query("SELECT * FROM article where title=$1",[req.params.articleName],function(err,result){
@@ -115,7 +200,7 @@ app.get('/user/:input',function(req,res){
     
 });
 });
-*/
+
 
 /*
     
