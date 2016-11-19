@@ -101,7 +101,7 @@ function createTemplate(data)
     var heading=data.heading;
     var image=data.image;
     var content=data.content;
-    var time=data.time;
+    var time=data.date;
     var htmlTemplate=
     `
 <!DOCTYPE html>
@@ -157,6 +157,7 @@ function createTemplate(data)
     
         <center><h2><b>${title}</b></h2></center>
         <br>
+        <center>
     <img src='${image}'>
     <br>
     <div>${content}</div>
