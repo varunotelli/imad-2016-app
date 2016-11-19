@@ -114,7 +114,7 @@ function createTemplate(data)
     
     <link href="/ui/bootstrap.min.css" rel="stylesheet">
 
-    <link href="/ui/profilecss.css" rel="stylesheet">
+    
     <link href="https://fonts.googleapis.com/css?family=Prociono" rel="stylesheet">
 
     <link href="/ui/profilecss.css" rel="stylesheet">
