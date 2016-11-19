@@ -157,22 +157,16 @@ function createTemplate(data)
         <center><h2><b>FEATURED ARTICLES</b></h2></center>
         <br>
         <div class="panel panel-default">
-            <div class="panel-content">
-            <h2>${title}</h2>
-
-
-
-
-
-
-
-
-            </div>
+            <div class="panel-content">${title}</div>
 
 
 
         </div>
-
+</div>
+</div>
+<script src="/ui/main.js"></script>
+</body>
+</html>
     
      ` ; 
      return htmlTemplate;   
