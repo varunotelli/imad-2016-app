@@ -132,7 +132,7 @@ function createTemplate(data)
             <div class="navbar-header">
     
 
-            <a href="profile.html"><img src="favicon-57.png"><div id="blogotron" class="navbar-brand">LOGOTRON</div></a>
+            <a href="profile.html"><img src="/ui/favicon-57.png"><div id="blogotron" class="navbar-brand">LOGOTRON</div></a>
 
             
 
