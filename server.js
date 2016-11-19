@@ -31,6 +31,15 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
+app.get('/ui/favicon-60.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'favicon-60.png'));
+});
+
+app.get('/ui/favicon-57.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'favicon-57.png'));
+});
+
+
 app.get('/ui/jquery-2.2.3.min.js', function (req, res) { res.sendFile(path.join(__dirname, 'ui', 'jquery-2.2.3.min.js')); });
 
 app.get('/ui/bootstrap.min.js', function (req, res) { res.sendFile(path.join(__dirname, 'ui', 'bootstrap.min.js')); });
@@ -50,105 +59,43 @@ app.get('/ui/blogstyle.css', function (req, res) { res.sendFile(path.join(__dirn
 
 app.get('/ui/profile.html', function (req, res) { res.sendFile(path.join(__dirname, 'ui', 'profile.html')); });
 
-
+app.get('/ui/create-blog.html', function (req, res) { res.sendFile(path.join(__dirname, 'ui', 'create-blog.html')); });
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
 
-var pool = new Pool(config);
 
+
+
+
+
+
+var pool = new Pool(config);
+app.get('/test-db',function(req,res){
+//make a select response
+////return a response with results
+pool.query("SELECT * FROM test",function(err,result){
+    if(err){
+        res.status(500).send(err.toString());
+    }else{
+        res.send(JSON.stringify(result));
+    }
+    
+});
+});
 
 /*
-function createTemplate(data)
-{
-    var title=data.title;
-    var heading=data.heading;
-    var image=data.image;
-    var content=data.content;
-    var time=data.date;
-    var htmlTemplate=
-    `
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link href="/ui/bootstrap.min.css" rel="stylesheet">
-
-    
-    <link href="https://fonts.googleapis.com/css?family=Prociono" rel="stylesheet">
-
-    <link href="/ui/blogstyle.css" rel="stylesheet">
-    
-
-    <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
-
-    </head>
-<body>
-<nav  class="navbar navbar-default">
-        <div class="container-fluid">
+app.get('/user/:input',function(req,res){
+    var hashedString=hash(req.params.input,"random string");
+    res.send(hashedString);
+});
 
 
-    
-            <div class="navbar-header">
-    
+*/
 
-            <a href="profile.html"><div id="blogotron" class="navbar-brand">LOGOTRON</div></a>
-
-            
-
-            </div>
-        
-            <ul id="nav-list" class="nav navbar-nav navbar-right">
-                
-               
-            
-                
-            </ul>
-       
-    </div>
-
-
-
-</nav>
-
-
-
-    <div class="container-fluid">
-        <div id="blogtxt">    
-        <center><h2><b>${title}</b></h2></center>
-        <br>
-        <center>
-    <img src='${image}'>
-    <br>
-    <br>
-    <div>${content}</div>
-    <br>
-    <h6>${time}</h6>
-    </div>
-
-
-        
-
-</div>
-<script src="/ui/jquery-2.2.3.min.js"></script>
-  <script src="/ui/bootstrap.min.js"></script>
-  <script src="/ui/main.js"></script>
-</body>
-</html>
-    
-     ` ; 
-     return htmlTemplate;   
-    
-}
-
-
-app.get('/articles/:articleName',function(req,res){
+/*app.get('/articles/:articleName',function(req,res){
     
     var articleName=req.params.articleName;
     pool.query("SELECT * FROM article where title=$1",[req.params.articleName],function(err,result){
@@ -168,8 +115,23 @@ app.get('/articles/:articleName',function(req,res){
     
 });
 });
+*/
 
-
+/*
+    
+app.get('/user',function(req,res){
+    
+    pool.query("SELECT * from user",function(err,result){
+        if(err)
+        res.status(500).send(err.toString());
+        else
+        
+        res.send(JSON.stringify(result));
+        
+    });
+    
+});
+*/
 
 
 
@@ -264,12 +226,6 @@ app.get('/logout',function(req,res)
 
 
 
-
-
-
-
-
-*/
 
 
 
