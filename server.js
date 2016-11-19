@@ -234,7 +234,7 @@ app.post('/signup',function(req,res){
  
 });
 
-
+/*Started
 app.post('/signin', function (req, res) {
    var username = req.body.username;
    var password = req.body.password;
@@ -285,7 +285,7 @@ app.get('/logout',function(req,res)
     res.send('<h1>Logged out</h1><br>click <a href="/">here </a> to return to homepage');
    
 });
-
+Ended*/
 
 
 
