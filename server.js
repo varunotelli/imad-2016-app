@@ -161,7 +161,7 @@ function createTemplate(data)
     <br>
     <div>${content}</div>
     <br>
-    <h6>${time.toDate()}</h6>
+    <h6>${time}</h6>
 
 
 
