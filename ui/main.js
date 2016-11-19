@@ -41,7 +41,7 @@
             
         }
         
-    }
+    };
 request.open('GET','http://varunotelli.imad.hasura-app.io/check-login');
 request.send(null);
   
@@ -64,7 +64,7 @@ signup.onclick=function()
             if(request.status===200)
             {
                 alert("User created Successfully! Login to continue!");
-                window.location.href="http://varunotelli.imad.hasura-app.io"
+                window.location.href="http://varunotelli.imad.hasura-app.io";
             
             }
             else
@@ -161,7 +161,7 @@ logout.onclick=function()
         if(request.readyState===XMLHttpRequest.DONE)
         {
             if(request.status===200)
-            res.send("<h1>LOGGED OUT</h1><br>click<a href='http://varunotelli.imad.hasura-app.io/>here </a> to login")
+            res.send("<h1>LOGGED OUT</h1><br>click<a href='http://varunotelli.imad.hasura-app.io/>here </a> to login");
             else
             alert('problem');
         }
