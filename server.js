@@ -31,9 +31,6 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-app.get('/ui/favicon-60.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'favicon-60.png'));
-});
 
 app.get('/ui/favicon-57.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'favicon-57.png'));
@@ -204,21 +201,6 @@ app.get('/articles/:articleName',function(req,res){
 });
 
 
-/*
-    
-app.get('/user',function(req,res){
-    
-    pool.query("SELECT * from user",function(err,result){
-        if(err)
-        res.status(500).send(err.toString());
-        else
-        
-        res.send(JSON.stringify(result));
-        
-    });
-    
-});
-*/
 
 
 
