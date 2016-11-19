@@ -154,7 +154,7 @@ function createTemplate(data)
 
 
     <div class="container-fluid">
-    
+        <div id="blogtxt">    
         <center><h2><b>${title}</b></h2></center>
         <br>
         <center>
@@ -164,7 +164,7 @@ function createTemplate(data)
     <div>${content}</div>
     <br>
     <h6>${time}</h6>
-
+    </div>
 
 
         
