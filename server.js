@@ -154,7 +154,7 @@ function createTemplate(data)
 
 
     <div class="container-fluid">
-    <div class="jumbotron">
+    
         <center><h2><b>FEATURED ARTICLES</b></h2></center>
         <br>
         <div class="panel panel-default">
@@ -162,7 +162,7 @@ function createTemplate(data)
 
 
 
-        </div>
+        
 </div>
 </div>
 <script src="/ui/jquery-2.2.3.min.js"></script>
