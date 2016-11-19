@@ -155,10 +155,13 @@ function createTemplate(data)
 
     <div class="container-fluid">
     
-        <center><h2><b>FEATURED ARTICLES</b></h2></center>
+        <center><h2><b>${title}</b></h2></center>
         <br>
-        
-            <div>${title}</div>
+    <img src='${image}'>
+    <br>
+    <div>${content}</div>
+    <br>
+    <h6>${time.toDate()}</h6>
 
 
 
