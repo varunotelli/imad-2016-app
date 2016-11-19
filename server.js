@@ -57,6 +57,237 @@ app.listen(8080, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
 
+var pool = new Pool(config);
+app.get('/test-db',function(req,res){
+//make a select response
+////return a response with results
+pool.query("SELECT * FROM test",function(err,result){
+    if(err){
+        res.status(500).send(err.toString());
+    }else{
+        res.send(JSON.stringify(result));
+    }
+    
+});
+});
+
+/*
+app.get('/user/:input',function(req,res){
+    var hashedString=hash(req.params.input,"random string");
+    res.send(hashedString);
+});
+
+
+*/
+
+function createTemplate(data)
+{
+    var title=data.title;
+    var heading=data.heading;
+    var image=data.image;
+    var content=data.content;
+    var time=data.date;
+    var htmlTemplate=
+    `
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="/ui/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Prociono" rel="stylesheet">
+
+    <link href="/ui/blogstyle.css" rel="stylesheet">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+
+    </head>
+<body>
+<nav  class="navbar navbar-default">
+        <div class="container-fluid">
+
+
+    
+            <div class="navbar-header">
+    
+
+            <a href="profile.html"><img src="/ui/favicon-57.png"><div id="blogotron" class="navbar-brand">LOGOTRON</div></a>
+
+            
+
+            </div>
+        
+            <ul id="nav-list" class="nav navbar-nav navbar-right">
+                
+               
+            
+                
+            </ul>
+       
+    </div>
+
+
+
+</nav>
+
+
+
+    <div class="container-fluid">
+        <div id="blogtxt">    
+        <center><h2><b>${title}</b></h2></center>
+        <br>
+        <center>
+    <img src='${image}'>
+    <br>
+    <br>
+    <div>${content}</div>
+    <br>
+    <h6>${time}</h6>
+    </div>
+
+
+        
+
+</div>
+<script src="/ui/jquery-2.2.3.min.js"></script>
+  <script src="/ui/bootstrap.min.js"></script>
+  <script src="/ui/main.js"></script>
+</body>
+</html>
+    
+     ` ; 
+     return htmlTemplate;   
+    
+}
+
+
+app.get('/articles/:articleName',function(req,res){
+    
+    var articleName=req.params.articleName;
+    pool.query("SELECT * FROM article where title=$1",[req.params.articleName],function(err,result){
+    if(err){
+        res.status(500).send(err.toString());
+    }else{
+        if(result.rows.length===0)
+        {
+            res.status(404).send('Article not found');
+        }
+        else
+        {
+            var articleDate=result.rows[0];
+            res.send(createTemplate(articleDate));
+        }
+    }
+    
+});
+});
+
+
+
+
+
+
+
+function hash(input,salt)
+{
+    var hashed=crypto.pbkdf2Sync(input,salt, 10000, 512, 'sha512');
+    return["pbkdf2","10000",salt,hashed.toString('hex')].join('$');
+}
+
+
+
+app.post('/signup',function(req,res){
+    
+    var username=req.body.username;
+    var password=req.body.password;
+    var email=req.body.email;
+    var salt=crypto.randomBytes(128).toString('hex');
+    var dbString=hash(password,salt);
+    
+    pool.query('INSERT INTO "user" (username,password,email) VALUES($1,$2,$3) ',[username,dbString,email],function(err,result)
+    {
+    if(err){
+        res.status(500).send(err.toString());
+        
+        
+    }else{
+        res.send('Success');
+    }
+    
+});
+
+ 
+});
+
+
+app.post('/signin', function (req, res) {
+   var username = req.body.username;
+   var password = req.body.password;
+   
+   pool.query('SELECT * FROM "user" WHERE username = $1', [username], function (err, result) {
+      if (err) {
+          res.status(500).send(err.toString());
+      } else {
+          if (result.rows.length === 0) {
+              res.status(403).send('username/password is invalid');
+          } else {
+              // Match the password
+              var dbString = result.rows[0].password;
+              var salt = dbString.split('$')[2];
+              var hashedpass = hash(password, salt); 
+              //res.send(hashedpass);
+              if (hashedpass === dbString) {
+                
+               req.session.auth={userId:result.rows[0].id};
+                res.send('credentials correct!');
+                
+              } else {
+                res.status(403).send('username/password is invalid');
+              }
+          }
+      }
+   });
+});
+
+app.get('/check-login', function (req, res) {
+   if (req.session && req.session.auth && req.session.auth.userId) {
+       // Load the user object
+       pool.query('SELECT * FROM "user" WHERE id = $1', [req.session.auth.userId], function (err, result) {
+           if (err) {
+              res.status(500).send(err.toString());
+           } else {
+              res.send(result.rows[0].username);    
+           }
+       });
+   } else {
+       res.status(400).send('You are not logged in');
+   }
+});
+
+app.get('/logout',function(req,res)
+{
+    delete req.session.auth;
+    res.send('<h1>Logged out</h1><br>click <a href="/">here </a> to return to homepage');
+   
+});
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
