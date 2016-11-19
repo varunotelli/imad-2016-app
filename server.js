@@ -210,7 +210,7 @@ function hash(input,salt)
 }
 
 
-/*Started
+
 app.post('/signup',function(req,res){
     
     var username=req.body.username;
@@ -263,7 +263,7 @@ app.post('/signin', function (req, res) {
       }
    });
 });
-Ended*/
+
 app.get('/check-login', function (req, res) {
    if (req.session && req.session.auth && req.session.auth.userId) {
        // Load the user object
