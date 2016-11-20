@@ -62,7 +62,7 @@ request.send(JSON.stringify({comment:comment}));
                     //console.log(commentsData[i].username);
                     console.log(content);
                 }
-                cmt.innerHtml=content;
+                cmt.innerHTML=content;
             }
               else
               console.log("nope");
