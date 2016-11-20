@@ -136,15 +136,15 @@ function createTemplate(data)
     <br>
     
     </div>
-        
-</div>
-
-<br><br>
+    <br><br>
 <h4><b>Comments</b></h4>
 <textarea id="content" class="form-control" rows="5" placeholder="Type content here"></textarea>
         <button id="submit" class="btn btn-primary">SUBMIT</button>
 <div id="comments">
+</div>    
 </div>
+
+
 <script src="/ui/jquery-2.2.3.min.js"></script>
   <script src="/ui/bootstrap.min.js"></script>
   <script src="/ui/main.js"></script>
