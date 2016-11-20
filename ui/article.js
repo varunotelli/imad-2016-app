@@ -60,7 +60,7 @@ request.send(JSON.stringify({comment:comment}));
                     <div>${commentsData[i].comment}</div>`;
                     console.log('in loop');
                     //console.log(commentsData[i].username);
-                    //console.log(content);
+                    console.log(content);
                 }
                 cmt.innerHtml=content;
             }
