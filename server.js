@@ -193,7 +193,7 @@ app.post('/submit-comment/:articleName',function(req,res){
                 else
                 {
                     var articleId=result.rows[0].id;
-                    pool.query('insert into comment(article_id,user_id,comment) values ($1,$2,$3)',[articleId,req.session.auth.userId,req.body.comment],function(err,result)
+                    pool.query('insert into comments(article_id,user_id,comment) values ($1,$2,$3)',[articleId,req.session.auth.userId,req.body.comment],function(err,result)
                     {
                          if (err) {
                                 res.status(500).send(err.toString());
@@ -218,7 +218,7 @@ app.post('/submit-comment/:articleName',function(req,res){
 
 app.get('/get-comments/:articleName', function (req, res) {
   
-   pool.query('SELECT comment.*, "user".username FROM article, comment, "user" WHERE article.title = $1 AND article.id = comments.article_id AND comment.user_id = "user".id ORDER BY comments.time DESC', [req.params.articleName], function (err, result) {
+   pool.query('SELECT comments.*, "user".username FROM article, comments, "user" WHERE article.title = $1 AND article.id = comments.article_id AND comments.user_id = "user".id ORDER BY comments.time DESC', [req.params.articleName], function (err, result) {
       if (err) {
           res.status(500).send(err.toString());
       } else {
