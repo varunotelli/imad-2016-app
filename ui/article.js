@@ -37,7 +37,7 @@ request.send(JSON.stringify({comment:comment}));
 {
     
     var cmt=document.getElementById('comments');
-    console.log('in func');
+    console.log('in comment');
    // console.log(user);
      var request=new XMLHttpRequest();
     request.onreadystatechange=function()
