@@ -50,7 +50,7 @@ request.send(JSON.stringify({comment:comment}));
                 //console.log("yes");
                //console.log('in func');
                var content;
-                var commentsData=request.responseText;
+                var commentsData=JSON.parse(request.responseText);
                 console.log(commentsData);
                 //alert(user);
                 for(var i=0;i<commentsData.length;i++)
