@@ -105,6 +105,11 @@ body
     color: black;
 }
 
+.commentbox
+{
+    border:1px solid black;
+}
+
 #submitbtn{
     float:right;
     margin-top:10px;
