@@ -177,43 +177,36 @@ app.get('/articles/:articleName',function(req,res){
 });
 
 
-app.post('/submit-comment/:articleName',function(req,res){
+pp.post('/submit-comment/:articleName', function (req, res) {
+   // Check if the user is logged in
     if (req.session && req.session.auth && req.session.auth.userId) {
-        
-        pool.query('select * from article where title=$1',[req.params.articleName],
-        function(err,result){
-            if(err){
+        // First check if the article exists and get the article-id
+        pool.query('SELECT * from article where title = $1', [req.params.articleName], function (err, result) {
+            if (err) {
                 res.status(500).send(err.toString());
-            }
-            else{
-                if(result.rows.length===0)
-                {
-                    res.status(404).send('Article not found');
-                }
-                else
-                {
-                    var articleId=result.rows[0].id;
-                    pool.query('insert into comments(article_id,user_id,comment) values ($1,$2,$3)',[articleId,req.session.auth.userId,req.body.comment],function(err,result)
-                    {
-                         if (err) {
+            } else {
+                if (result.rows.length === 0) {
+                    res.status(400).send('Article not found');
+                } else {
+                    var articleId = result.rows[0].id;
+                    // Now insert the right comment for this article
+                    pool.query(
+                        "INSERT INTO comment (article_id, user_id,comment) VALUES ($1, $2, $3)",
+                        [articleId, req.session.auth.userId,req.body.comment],
+                        function (err, result) {
+                            if (err) {
                                 res.status(500).send(err.toString());
                             } else {
-                                res.status(200).send('Comment inserted!');
+                                res.status(200).send('Comment inserted!')
                             }
-                        
-                        
-                    });
+                        });
                 }
             }
-            
-        }
-        
-        );
-    
+       });     
+    } else {
+        res.status(403).send('Only logged in users can comment');
     }
-    
 });
-
 
 
 app.get('/get-comments/:articleName', function (req, res) {
