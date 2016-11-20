@@ -44,6 +44,7 @@ app.get('/ui/bootstrap.css', function (req, res) { res.sendFile(path.join(__dirn
 
 app.get('/ui/main.js', function (req, res) { res.sendFile(path.join(__dirname, 'ui', 'main.js')); });
 
+app.get('/ui/article.js', function (req, res) { res.sendFile(path.join(__dirname, 'ui', 'article.js')); });
 
 app.get('/ui/bgimg.jpg', function (req, res) { res.sendFile(path.join(__dirname, 'ui', 'bgimg.jpg')); });
 
@@ -148,6 +149,7 @@ function createTemplate(data)
 <script src="/ui/jquery-2.2.3.min.js"></script>
   <script src="/ui/bootstrap.min.js"></script>
   <script src="/ui/main.js"></script>
+  <script src="/ui/article.js"></script>
 </body>
 </html>
     
