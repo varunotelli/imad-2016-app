@@ -59,8 +59,8 @@ request.send(JSON.stringify({comment:comment}));
                     content+=`<div>${commentsData[i].username}</div>
                     <div>${commentsData[i].comment}</div>`;
                     console.log('in loop');
-                    console.log(commentsData[i].username);
-                    console.log(content);
+                    //console.log(commentsData[i].username);
+                    //console.log(content);
                 }
                 cmt.innerHtml=content;
             }
