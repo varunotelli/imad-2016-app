@@ -1,3 +1,6 @@
+ var currentArticleTitle = window.location.pathname.split('/')[2];
+
+
 var submit=document.getElementById('submitbtn');
 console.log(submit);
 submit.onclick=function()
@@ -27,3 +30,48 @@ request.send(JSON.stringify({comment:comment}));
 
 
 };
+
+
+
+ function loadComments()
+{
+    
+    var cmt=document.getElementById('comments');
+    console.log('in func');
+   // console.log(user);
+     var request=new XMLHttpRequest();
+    request.onreadystatechange=function()
+    {
+        if(request.readyState===XMLHttpRequest.DONE)
+        {
+            if(request.status===200)
+            {
+                
+                //console.log("yes");
+               //console.log('in func');
+               var content='';
+                var commentsData=request.responseText;
+                //alert(user);
+                for(var i=0;i<commentsData.length;i++)
+                {
+                    content=`<div?${commentsData[i].username}</div>
+                    ${commentsData[i].comment}`;
+                }
+                cmt.innerHtml=content;
+            }
+              else
+              console.log("nope");
+              
+            
+        }
+        
+    };
+request.open('GET','http://varunotelli.imad.hasura-app.io/get-comments/'+currentArticleTitle,true);
+request.send(null);
+  
+   console.log("loaded");
+ 
+    
+}
+
+loadComments();
