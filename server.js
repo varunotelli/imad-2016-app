@@ -81,7 +81,7 @@ pool.query("SELECT * FROM test",function(err,result){
 });
 
 
-/*function createTemplate(data)
+function createTemplate(data)
 {
     var title=data.title;
     var heading=data.heading;
@@ -315,7 +315,7 @@ app.get('/logout',function(req,res)
 });
 
 
-*/
+
 
 
 
