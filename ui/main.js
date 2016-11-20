@@ -123,7 +123,7 @@ request.send(JSON.stringify({username:username,password:password,email:email}));
 
 
 
-
+/*
 
 function loadCommentForm()
 {
@@ -161,7 +161,7 @@ request.send(JSON.stringify({comment:comment}));
 
 }
 
-
+*/
 
 
 
