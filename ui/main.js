@@ -133,7 +133,7 @@ function loadCommentForm () {
         <input type="submit" id="submit" value="Submit" />
         <br/>
         `;
-    document.getElementById('comment_form').innerHTML = commentFormHtml;
+    document.getElementById('comments').innerHTML = commentFormHtml;
     
     // Submit username/password to login
     var submit = document.getElementById('submit');
@@ -148,7 +148,7 @@ function loadCommentForm () {
                 if (request.status === 200) {
                     // clear the form & reload all the comments
                     document.getElementById('comment_text').value = '';
-                    //loadComments();    
+                    loadComments();    
                 } else {
                     alert('Error! Could not submit comment');
                 }
