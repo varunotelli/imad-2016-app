@@ -132,6 +132,7 @@ function createTemplate(data)
     <div class="container-fluid">
         <div id="blogtxt">    
         <center><h2><b>${title}</b></h2></center>
+        <h6>${time.toDateString()}</h6>
         <br>
         <center>
     <img src='${image}'>
@@ -139,7 +140,7 @@ function createTemplate(data)
     <br>
     <div>${content}</div>
     <br>
-    <h6>${time}</h6>
+    
     </div>
         
 </div>
