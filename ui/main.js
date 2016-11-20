@@ -125,30 +125,28 @@ request.send(JSON.stringify({username:username,password:password,email:email}));
 
 
 
-function loadCommentForm () {
-    var commentFormHtml = `
-        <h5>Submit a comment</h5>
-        <textarea id="comment_text" rows="5" cols="100" placeholder="Enter your comment here..."></textarea>
-        <br/>
-        <input type="submit" id="submit" value="Submit" />
-        <br/>
-        `;
-    document.getElementById('comments').innerHTML = commentFormHtml;
-    
-    // Submit username/password to login
-   
-        // Make the request
-        var comment = document.getElementById('comment_text').value;
-        request.open('POST', '/submit-comment/' + currentArticleTitle, true);
-        request.setRequestHeader('Content-Type', 'application/json');
-        request.send(JSON.stringify({comment: comment}));  
-       
-        
-
-}
+var submit=document.getElementById('submit');
+signup.onclick=function()
+{
+    console.log('in func');
+    var request=new XMLHttpRequest();
+    request.onreadystatechange=function(){
+        if(request.readyState===XMLHttpRequest.DONE)
+        {
+            if(request.status===200)
+            {
+                alert("Comment posted Succesfully");
+                //window.location.href="http://varunotelli.imad.hasura-app.io";
+            
+            }
+            else
+            alert('problem');
+        }
+    };
+};
 
 
-loadCommentForm();
+//loadCommentForm();
 
 
 
