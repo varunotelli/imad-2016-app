@@ -151,7 +151,7 @@ submit.onclick=function()
     };
 };
 
-
+loadCommentForm();
 
 
 request.open('POST','http://varunotelli.imad.hasura-app.io/submit-comment/'+currentArticleTitle,true);
