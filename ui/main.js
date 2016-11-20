@@ -146,7 +146,7 @@ logout.onclick=function()
 request.open('GET','http://varunotelli.imad.hasura-app.io/logout');
 request.send(null);
 };
-
+/*
 var submit=document.getElementById('submitbtn');
 console.log(submit);
 submit.onclick=function()
@@ -176,4 +176,4 @@ request.send(JSON.stringify({comment:comment}));
 
 
 };
-
+*/
