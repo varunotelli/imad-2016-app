@@ -1,3 +1,8 @@
+ var currentArticleTitle = window.location.pathname.split('/')[2];
+
+ 
+ 
+ 
  function loggedinUser()
 {
     
@@ -120,37 +125,44 @@ request.send(JSON.stringify({username:username,password:password,email:email}));
 
 
 
+function loadCommentForm()
+{
+var commenttext=
+`
+<textarea id="content" class="form-control" rows="15" placeholder="Type content here"></textarea>
+        <button id="submit" class="btn btn-primary">SUBMIT</button>
+`;
+document.getElementById('conmments').innerHTML = content;
+var comment=document.getElementById('content').value;
 
-/*var submit=document.getElementById('submit');
-signup.onclick=function()
+var submit=document.getElementById('submit');
+submit.onclick=function()
 {
     //console.log('in func');
     var request=new XMLHttpRequest();
     request.onreadystatechange=function(){
         if(request.readyState===XMLHttpRequest.DONE)
         {
-            if(request.status===200)
-            window.location.href='http://varunotelli.imad.hasura-app.io/ui/profile.html';
+            if(request.status===200);
+            
             else
             alert('problem');
         }
     };
-
-
-
-var title=document.getElementById('title').value;
-console.log(title);
-var content=document.getElementById('content').value;
-console.log(content);
-//var email=document.getElementById('email').value;
-//console.log(email);
-request.open('POST','http://varunotelli.imad.hasura-app.io/create-blog',true);
-request.setRequestHeader('Content-Type','application/json');
-request.send(JSON.stringify({title:title,content:content}));
-
-
 };
-*/
+
+
+
+
+request.open('POST','http://varunotelli.imad.hasura-app.io/submit-comment/'+currentArticleTitle,true);
+request.setRequestHeader('Content-Type','application/json');
+request.send(JSON.stringify({comment:comment}));
+
+
+}
+
+
+
 
 
 var logout=document.getElementById('logout');
