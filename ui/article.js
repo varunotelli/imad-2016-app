@@ -49,7 +49,7 @@ request.send(JSON.stringify({comment:comment}));
                 
                 //console.log("yes");
                //console.log('in func');
-               var content='';
+               var content;
                 var commentsData=request.responseText;
                 console.log(commentsData);
                 //alert(user);
