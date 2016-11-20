@@ -128,7 +128,7 @@ request.send(JSON.stringify({username:username,password:password,email:email}));
 var submit=document.getElementById('submit');
 submit.onclick=function()
 {
-    console.log('in func');
+    console.log('in article');
     var request=new XMLHttpRequest();
     request.onreadystatechange=function(){
         if(request.readyState===XMLHttpRequest.DONE)
