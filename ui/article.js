@@ -35,7 +35,7 @@ request.send(JSON.stringify({comment:comment}));
 
  function loadComments()
 {
-    
+    console.log(currentArticleTitle);
     var cmt=document.getElementById('commentpost');
     console.log('in comment');
    console.log(cmt);
