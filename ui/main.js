@@ -1,8 +1,3 @@
- var currentArticleTitle = window.location.pathname.split('/')[2];
-
- 
- 
- 
  function loggedinUser()
 {
     
@@ -20,7 +15,7 @@
                 console.log("yes");
                console.log('in func');
                 var user=request.responseText;
-                
+                //alert(user);
               usertxt.innerHTML=` <li id="usertxt" class="dropdown">
                 <div class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><br class="hidden-xs">${user}<span class="caret"></span></div>
                 
@@ -57,31 +52,6 @@ request.send(null);
 
 
 loggedinUser();
-
-var submit=document.getElementById('submit');
-submit.onclick=function()
-{
-    console.log('in article');
-    var request=new XMLHttpRequest();
-    request.onreadystatechange=function(){
-        if(request.readyState===XMLHttpRequest.DONE)
-        {
-            if(request.status===200)
-            {
-                alert("Comment posted Succesfully");
-                //window.location.href="http://varunotelli.imad.hasura-app.io";
-            
-            }
-            else
-            alert('problem');
-        }
-    };
-    var comment=document.getElementById('content').value;
-    request.open('POST','http://varunotelli.imad.hasura-app.io/submit-comment/'+currentArticleTitle,true);
-request.setRequestHeader('Content-Type','application/json');
-request.send(JSON.stringify({comment:content}));
-};
-
 
 var signup=document.getElementById('signupbtn');
 signup.onclick=function()
@@ -151,9 +121,41 @@ request.send(JSON.stringify({username:username,password:password,email:email}));
 
 
 
+function loadCommentForm()
+{
+var commenttext=
+`
+<textarea id="content" class="form-control" rows="15" placeholder="Type content here"></textarea>
+        <button id="submit" class="btn btn-primary">SUBMIT</button>
+`;
+document.getElementById('conmments').innerHTML = content;
+var comment=document.getElementById('content').value;
 
-//loadCommentForm();
+var submit=document.getElementById('submit');
+submit.onclick=function()
+{
+    //console.log('in func');
+    var request=new XMLHttpRequest();
+    request.onreadystatechange=function(){
+        if(request.readyState===XMLHttpRequest.DONE)
+        {
+            if(request.status===200);
+            
+            else
+            alert('problem');
+        }
+    };
+};
 
+
+
+
+request.open('POST','http://varunotelli.imad.hasura-app.io/submit-comment/'+currentArticleTitle,true);
+request.setRequestHeader('Content-Type','application/json');
+request.send(JSON.stringify({comment:comment}));
+
+
+}
 
 
 
