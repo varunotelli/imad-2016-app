@@ -126,7 +126,7 @@ request.send(JSON.stringify({username:username,password:password,email:email}));
 
 
 var submit=document.getElementById('submit');
-signup.onclick=function()
+submit.onclick=function()
 {
     console.log('in func');
     var request=new XMLHttpRequest();
