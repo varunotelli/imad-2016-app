@@ -36,9 +36,9 @@ request.send(JSON.stringify({comment:comment}));
  function loadComments()
 {
     
-    var cmt=document.getElementById('comments');
+    var cmt=document.getElementById('commentpost');
     console.log('in comment');
-   // console.log(user);
+   console.log(cmt);
      var request=new XMLHttpRequest();
     request.onreadystatechange=function()
     {
