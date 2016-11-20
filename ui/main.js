@@ -55,7 +55,7 @@ request.send(null);
 
 loggedinUser();
 
-
+/*
 var submit=document.getElementById('submit');
 submit.onclick=function()
 {
@@ -84,6 +84,7 @@ request.send(JSON.stringify({comment:comment}));
 
 
 };
+*/
 
 var signup=document.getElementById('signupbtn');
 signup.onclick=function()
