@@ -138,6 +138,11 @@ function createTemplate(data)
     </div>
         
 </div>
+
+<br><br>
+<h4><b>Comments</b></h4>
+<div id="comments">
+</div>
 <script src="/ui/jquery-2.2.3.min.js"></script>
   <script src="/ui/bootstrap.min.js"></script>
   <script src="/ui/main.js"></script>
