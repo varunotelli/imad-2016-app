@@ -141,6 +141,8 @@ function createTemplate(data)
 
 <br><br>
 <h4><b>Comments</b></h4>
+<textarea id="content" class="form-control" rows="5" placeholder="Type content here"></textarea>
+        <button id="submit" class="btn btn-primary">SUBMIT</button>
 <div id="comments">
 </div>
 <script src="/ui/jquery-2.2.3.min.js"></script>
