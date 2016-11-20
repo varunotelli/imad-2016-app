@@ -20,7 +20,7 @@ submit.onclick=function()
 
 
 
-var comment=document.getElementById('content');
+var comment=document.getElementById('content').value;
 request.open('POST','http://varunotelli.imad.hasura-app.io/submit-comment/'+currentArticleTitle,true);
 request.setRequestHeader('Content-Type','application/json');
 request.send(JSON.stringify({comment:comment}));
