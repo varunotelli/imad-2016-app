@@ -54,7 +54,7 @@ request.send(JSON.stringify({comment:comment}));
                 //alert(user);
                 for(var i=0;i<commentsData.length;i++)
                 {
-                    content=`<div?${commentsData[i].username}</div>
+                    content=`<div>${commentsData[i].username}</div>
                     ${commentsData[i].comment}`;
                     console.log('in loop');
                     console.log(content);
