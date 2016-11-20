@@ -124,6 +124,7 @@ request.send(JSON.stringify({username:username,password:password,email:email}));
 
 
 var submit=document.getElementById('submitbtn');
+console.log(submit);
 submit.onclick=function()
 {
     console.log('in art');
