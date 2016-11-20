@@ -110,6 +110,11 @@ body
     border:1px solid black;
 }
 
+#commbox
+{
+    margin-bottom:10px;
+}
+
 #submitbtn{
     float:right;
     margin-top:10px;
