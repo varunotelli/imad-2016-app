@@ -80,12 +80,6 @@ pool.query("SELECT * FROM test",function(err,result){
 });
 });
 
-/*
-app.get('/user/:input',function(req,res){
-    var hashedString=hash(req.params.input,"random string");
-    res.send(hashedString);
-});
-*/
 
 function createTemplate(data)
 {
