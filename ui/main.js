@@ -127,6 +127,7 @@ request.send(JSON.stringify({username:username,password:password,email:email}));
 
 function loadCommentForm()
 {
+    console.log('in article');
 var commenttext=
 `
 <textarea id="content" class="form-control" rows="15" placeholder="Type content here"></textarea>
