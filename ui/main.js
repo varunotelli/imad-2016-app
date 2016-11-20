@@ -132,8 +132,9 @@ var commenttext=
 <textarea id="content" class="form-control" rows="15" placeholder="Type content here"></textarea>
         <button id="submit" class="btn btn-primary">SUBMIT</button>
 `;
-/*document.getElementById('comments').innerHTML = content;
-var comment=document.getElementById('content').value;
+document.getElementById('comments').innerHTML = commentText;
+
+/*var comment=document.getElementById('content').value;
 
 var submit=document.getElementById('submit');
 submit.onclick=function()
