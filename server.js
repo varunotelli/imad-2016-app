@@ -211,7 +211,16 @@ app.post('/submit-comment/:articleName',function(req,res){
 
 
 
-
+app.get('/get-comments/:articleName', function (req, res) {
+  
+   pool.query('SELECT comments.*, "user".username FROM article, comments, "user" WHERE article.title = $1 AND article.id = comments.article_id AND comment.user_id = "user".id ORDER BY comments.time DESC', [req.params.articleName], function (err, result) {
+      if (err) {
+          res.status(500).send(err.toString());
+      } else {
+          res.send(JSON.stringify(result.rows));
+      }
+   });
+});
 
 
 
