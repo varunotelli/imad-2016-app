@@ -199,7 +199,7 @@ app.post('/submit-comment/:articleName', function (req, res) {
                         [articleId, req.session.auth.userId,req.body.comment],
                         function (err, result) {
                             if (err) {
-                                res.status(500).send(err.toString());
+                                res.status(500).send('err.toString()');
                             } else {
                                 res.status(200).send('Comment inserted!');
                             }
