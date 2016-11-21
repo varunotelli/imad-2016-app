@@ -144,7 +144,7 @@ function createTemplate(data)
 <h3><b>Comments</b></h3>
 <div id="commentpost" class="col-md-10">
 </div>  
-<textarea id="content" class="form-control" rows="5" placeholder="Type content here"></textarea>
+<textarea id="content" class="form-control col-md-10" rows="5" placeholder="Type content here"></textarea>
         <button id="submitbtn" class="btn btn-primary">SUBMIT</button>
   
 </div>
