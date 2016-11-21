@@ -57,6 +57,7 @@ app.get('/ui/blogstyle.css', function (req, res) { res.sendFile(path.join(__dirn
 
 app.get('/ui/profile.html', function (req, res) { res.sendFile(path.join(__dirname, 'ui', 'profile.html')); });
 
+app.get('/ui/ajax-loader.gif', function (req, res) { res.sendFile(path.join(__dirname, 'ui', 'ajax-loader.gif')); });
 
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
@@ -143,7 +144,7 @@ function createTemplate(data)
     <br><br>
 <h3><b>Comments</b></h3>
 <div id="commentpost" class="col-md-10">
-Loading comments....
+<img src="/ui/ajax-loader.gif>Loading comments....
 </div>  
 <textarea id="content" class="form-control col-md-10" rows="5" placeholder="Type comment here"></textarea>
         <button id="submitbtn" class="btn btn-primary">SUBMIT</button>
