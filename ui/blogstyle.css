@@ -105,6 +105,12 @@ body
     color: black;
 }
 
+#commentpost{
+    background:white;
+    border:1px solid black;
+   box-shadow: 0 0 50px black;
+}
+
 .commentbox
 {
     
