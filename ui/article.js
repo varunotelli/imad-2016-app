@@ -1,6 +1,7 @@
  var currentArticleTitle = window.location.pathname.split('/')[2];
 var articles = document.getElementById('articles');
 console.log(articles);
+loadArticles();
 
 var submit=document.getElementById('submitbtn');
 var content=document.getElementById('content');
@@ -125,5 +126,4 @@ function loadArticles () {
     request.send(null);
 }
 
-loadArticles();
 loadComments();
