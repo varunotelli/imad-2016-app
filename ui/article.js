@@ -14,6 +14,7 @@ submit.onclick=function()
             {
                 alert("User created Successfully! Login to continue!");
                //window.location.href="http://varunotelli.imad.hasura-app.io";
+               loadComments();
             
             }
             else
