@@ -4,33 +4,6 @@ console.log(articles);
 loadArticles();
 var articleTitle = document.getElementById('posts');
 console.log(articleTitle);
-loadArticleTitle();
-
-var submit=document.getElementById('submitbtn');
-var content=document.getElementById('content');
-console.log(submit);
-submit.onclick=function()
-{
-    console.log('in art');
-    var request=new XMLHttpRequest();
-    request.onreadystatechange=function(){
-        if(request.readyState===XMLHttpRequest.DONE)
-        {
-            if(request.status===200)
-            {
-                alert("Commment posted successfully");
-               //window.location.href="http://varunotelli.imad.hasura-app.io";
-               content.value='';
-               loadComments();
-            
-            }
-            else
-            {alert('Login to post comment');
-                window.location.href="http://varunotelli.imad.hasura-app.io/";
-            }
-        }
-    };
-
 
 function loadArticleTitle () {
        console.log('profile');
@@ -57,8 +30,36 @@ function loadArticleTitle () {
     request.open('GET', '/get-articles', true);
     request.send(null);
 }
-
 loadArticleTitle();
+var submit=document.getElementById('submitbtn');
+var content=document.getElementById('content');
+console.log(submit);
+submit.onclick=function()
+{
+    console.log('in art');
+    var request=new XMLHttpRequest();
+    request.onreadystatechange=function(){
+        if(request.readyState===XMLHttpRequest.DONE)
+        {
+            if(request.status===200)
+            {
+                alert("Commment posted successfully");
+               //window.location.href="http://varunotelli.imad.hasura-app.io";
+               content.value='';
+               loadComments();
+            
+            }
+            else
+            {alert('Login to post comment');
+                window.location.href="http://varunotelli.imad.hasura-app.io/";
+            }
+        }
+    };
+
+
+
+
+//loadArticleTitle();
 
 
 var comment=document.getElementById('content').value;
