@@ -114,17 +114,19 @@ footer a{
     font-family: 'Prociono', serif;
     font-size:2em;
     margin-top:70px;
-    color:white;
-    padding-right:0;
+    
+    padding-right:10px;
 }
 
 #blog{
     float:left;
+    color:white;
    
 }
 
 #about{
     float:right;
+    color:white;
 }
 
 /*END OF HOMEPAGE*/
