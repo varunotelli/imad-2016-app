@@ -2,6 +2,7 @@
 
 
 var submit=document.getElementById('submitbtn');
+var content=document.getElementById('content');
 console.log(submit);
 submit.onclick=function()
 {
@@ -14,6 +15,7 @@ submit.onclick=function()
             {
                 alert("Commment posted successfully");
                //window.location.href="http://varunotelli.imad.hasura-app.io";
+               content.val('');
                loadComments();
             
             }
