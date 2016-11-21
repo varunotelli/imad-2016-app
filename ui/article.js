@@ -2,7 +2,8 @@
 var articles = document.getElementById('articles');
 console.log(articles);
 loadArticles();
-
+var articleTitle = document.getElementById('posts');
+console.log(articleTitle);
 var submit=document.getElementById('submitbtn');
 var content=document.getElementById('content');
 console.log(submit);
@@ -34,7 +35,7 @@ function loadArticleTitle () {
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
         if (request.readyState === XMLHttpRequest.DONE) {
-            var articles = document.getElementById('posts');
+            
             if (request.status === 200) {
                 var content = '<ul>';
                 var articleData = JSON.parse(this.responseText);
@@ -44,9 +45,9 @@ function loadArticleTitle () {
                     (${articleData[i].date.split('T')[0]})</li>`;
                 }
                 content += "</ul>";
-                articles.innerHTML = content;
+                articleTitle.innerHTML = content;
             } else {
-                articles.innerHTML('Oops! Could not load all articles!');
+                articleTitle.innerHTML('Oops! Could not load all articles!');
             }
         }
     };
