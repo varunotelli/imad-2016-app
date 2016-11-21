@@ -1,5 +1,6 @@
  var currentArticleTitle = window.location.pathname.split('/')[2];
-
+var articles = document.getElementById('articles');
+console.log(articles);
 
 var submit=document.getElementById('submitbtn');
 var content=document.getElementById('content');
@@ -84,8 +85,7 @@ request.send(null);
  
     
 }
-var articles = document.getElementById('articles');
-console.log(articles);
+
 function loadArticles () {
         // Check if the user is already logged in
         console.log('in home');
