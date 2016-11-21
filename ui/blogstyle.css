@@ -115,11 +115,12 @@ body
     margin-bottom:10px;
     height:50px;
     float:left;
+    clear:right;
 }
 
 #userbox{
     float:left;
-    clear:right;
+    clear:left;
 }
 #submitbtn{
     float:right;
