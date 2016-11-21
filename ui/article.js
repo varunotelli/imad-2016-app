@@ -58,8 +58,9 @@ request.send(JSON.stringify({comment:comment}));
                 //alert(user);
                 for(var i=commentsData.length-1;i>=0;i--)
                 {
+                    var timestamp= new Date(commentsData[i].time);
                     console.log(commentsData[i]);
-                    content+=`<div id="userbox" class="commentbox ">${commentsData[i].username} at ${commentsData[i].time.split('T')[0]}</div>
+                    content+=`<div id="userbox" class="commentbox ">${commentsData[i].username} - ${timestamp.toLocaleTimeString()} on ${timestamp.toLocaleDateString()} </div>
                     <div id="commbox" class="commentbox ">${commentsData[i].comment}</div>`;
                     console.log('in loop');
                     //console.log(commentsData[i].username);
