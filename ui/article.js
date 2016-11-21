@@ -40,7 +40,7 @@ function loadArticleTitle () {
             
             if (request.status === 200) {
                 var content = '<ul>';
-                var articleData = JSON.parse(this.responseText);
+                var articleData = JSON.parse(request.responseText);
                 for (var i=0; i< articleData.length; i++) {
                     content += `<li>
                     <a href="/articles/${articleData[i].title}">${articleData[i].heading}</a>
