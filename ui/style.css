@@ -92,4 +92,8 @@ body
     background-image: url("bgimg.jpg"); 
 }
 
+#contact{
+    float:right;
+    bottom:0;
+}
 /*END OF HOMEPAGE*/
