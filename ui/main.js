@@ -148,6 +148,7 @@ request.send(null);
 
 function loadArticles () {
         // Check if the user is already logged in
+        console.log('in home');
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
         if (request.readyState === XMLHttpRequest.DONE) {
