@@ -95,5 +95,6 @@ body
 #contact{
     float:right;
     bottom:0;
+    position:absolute;
 }
 /*END OF HOMEPAGE*/
