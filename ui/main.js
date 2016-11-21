@@ -145,34 +145,41 @@ logout.onclick=function()
 request.open('GET','http://varunotelli.imad.hasura-app.io/logout');
 request.send(null);
 };
-/*
-var submit=document.getElementById('submitbtn');
-console.log(submit);
-submit.onclick=function()
-{
-    console.log('in art');
-    var request=new XMLHttpRequest();
-    request.onreadystatechange=function(){
-        if(request.readyState===XMLHttpRequest.DONE)
-        {
-            if(request.status===200)
-            {
-                alert("User created Successfully! Login to continue!");
-               //window.location.href="http://varunotelli.imad.hasura-app.io";
-            
+
+function loadArticles () {
+        // Check if the user is already logged in
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+        if (request.readyState === XMLHttpRequest.DONE) {
+            var articles = document.getElementById('articles');
+            if (request.status === 200) {
+                var content = '<ul>';
+                var articleData = JSON.parse(this.responseText);
+                for (var i=0; i< articleData.length; i++) {
+                    content += `<li>
+                    <a href="/articles/${articleData[i].title}"><div class="articlestuff"><div id="blogtxt">  
+        
+        <center><h2><b>${heading}</b></h2></center>
+        <center><h6>${time.toDateString()}</h6></center>
+        <br>
+        <center>
+    <img src='${image}'>
+    <br>
+    <br>
+    <div>${content}</div>
+    <br>
+    
+    </div>
+    <br><br></div></a></li>`;
+                }
+                content += "</ul>";
+                articles.innerHTML = content;
+            } else {
+                articles.innerHTML('Oops! Could not load all articles!');
             }
-            else
-            alert('problem');
         }
     };
-
-
-
-var comment=document.getElementById('content');
-request.open('POST','http://varunotelli.imad.hasura-app.io/submit-comment/'+currentArticleTitle,true);
-request.setRequestHeader('Content-Type','application/json');
-request.send(JSON.stringify({comment:comment}));
-
-
-};
-*/
+    
+    request.open('GET', '/get-articles', true);
+    request.send(null);
+}
