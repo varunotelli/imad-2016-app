@@ -123,6 +123,10 @@ h3{
     font-size:2em;
 }
 
+h6{
+    margin-top:0;
+}
+
 #commbox
 {
     margin-bottom:10px;
