@@ -1,6 +1,3 @@
-
-
-
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
@@ -101,7 +98,7 @@ function createTemplate(data)
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>${heading}</title>
+    <title>${title}</title>
     <link href="/ui/bootstrap.min.css" rel="stylesheet">
     
     <link href="https://fonts.googleapis.com/css?family=Prociono" rel="stylesheet">
@@ -131,7 +128,7 @@ function createTemplate(data)
     <div class="container-fluid">
         <div id="blogtxt">  
         
-        <center><h2><b>${title}</b></h2></center>
+        <center><h2><b>${heading}</b></h2></center>
         <center><h6>${time.toDateString()}</h6></center>
         <br>
         <center>
