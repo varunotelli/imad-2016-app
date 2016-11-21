@@ -95,11 +95,11 @@ body
 #contact{
     right:0;
     bottom:0;
-    position:absolute;
+    position:relative;
     color:white;
     font-family: 'Prociono', serif;
     font-size:2em;
-
+    float:right;
 }
 
 .panel-footer{
