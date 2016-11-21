@@ -54,7 +54,7 @@ request.send(JSON.stringify({comment:comment}));
                 var commentsData=JSON.parse(request.responseText);
                 console.log(commentsData);
                 //alert(user);
-                for(var i=commentsData.length;i>=0;i--)
+                for(var i=commentsData.length-1;i>=0;i--)
                 {
                     console.log(commentsData[i]);
                     content+=`<div id="userbox" class="commentbox ">${commentsData[i].username}</div>
