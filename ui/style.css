@@ -93,8 +93,11 @@ body
 }
 
 #contact{
-    float:right;
+    right:0;
     bottom:0;
     position:absolute;
+    color:white;
+    font-family: 'Prociono', serif;
+
 }
 /*END OF HOMEPAGE*/
