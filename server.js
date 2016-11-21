@@ -130,7 +130,7 @@ function createTemplate(data)
 </nav>
     <div class="container-fluid">
         <div id="blogtxt">  
-        <img src="/ui/ajax-loader.gif">
+        
         <center><h2><b>${title}</b></h2></center>
         <center><h6>${time.toDateString()}</h6></center>
         <br>
