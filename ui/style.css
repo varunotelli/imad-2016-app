@@ -103,8 +103,7 @@ body
 
 footer a{
     color:black;
-    font-family: 'Prociono', serif;
-    font-size:2em;
+    
     
    
     
@@ -112,10 +111,13 @@ footer a{
 
 #contact{
     float:right;
+    font-family: 'Prociono', serif;
+    font-size:2em;
 }
 
 #blog{
     float:left;
+   
 }
 
 #about{
