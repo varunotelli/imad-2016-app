@@ -115,7 +115,7 @@ function createTemplate(data)
     
             <div class="navbar-header">
     
-            <a href="profile.html"><div id="blogotron" class="navbar-brand">BLOGOTRON</div></a>
+            <a href="/ui/home.html"><div id="blogotron" class="navbar-brand">BLOGOTRON</div></a>
             
             </div>
         
@@ -145,7 +145,7 @@ function createTemplate(data)
     <br><br>
 <h3><b>Comments</b></h3>
 <div id="commentpost" class="col-md-10">
-<img src="/ui/ajax-loader.gif">Loading comments....
+<center><img src="/ui/ajax-loader.gif">Loading comments....</center>
 </div>  
 <textarea id="content" class="form-control col-md-10" rows="5" placeholder="Type comment here"></textarea>
         <button id="submitbtn" class="btn btn-primary">SUBMIT</button>
