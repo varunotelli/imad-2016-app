@@ -60,7 +60,7 @@ request.send(JSON.stringify({comment:comment}));
                 {
                     var timestamp= new Date(commentsData[i].time);
                     console.log(commentsData[i]);
-                    content+=`<div id="userbox" class="commentbox "><b>${commentsData[i].username}</b> at <h6>${timestamp.toLocaleTimeString()} on ${timestamp.toLocaleDateString()}</h6> </div>
+                    content+=`<div id="userbox" class="commentbox "><b>${commentsData[i].username}</b>  <h6>at ${timestamp.toLocaleTimeString()} on ${timestamp.toLocaleDateString()}</h6> </div>
                     <div id="commbox" class="commentbox ">${commentsData[i].comment}</div>`;
                     console.log('in loop');
                     //console.log(commentsData[i].username);
