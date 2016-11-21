@@ -109,6 +109,10 @@ footer a{
     
 }
 
+#contact{
+    float:right;
+}
+
 #blog{
     float:left;
 }
