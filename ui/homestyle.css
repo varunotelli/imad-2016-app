@@ -88,9 +88,10 @@ text-align: center;
 height:20%;
 overflow:hidden;
 border: 1px solid black;
-
+margin:30px;
 }
 
 .articlestuff:hover{
 box-shadow: 0 0 50px yellow;
+text-decoration:none;
 }
