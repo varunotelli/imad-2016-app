@@ -101,14 +101,14 @@ function loadArticles () {
                     content += `<li>
                     <a href="/articles/${articleData[i].title}"><div class="articlestuff"><div id="blogtxt">  
         
-        <center><h2><b>${heading}</b></h2></center>
-        <center><h6>${time.toDateString()}</h6></center>
+        <center><h2><b>${articleData[i].heading}</b></h2></center>
+        <center><h6>${articleData[i].time.toDateString()}</h6></center>
         <br>
         <center>
-    <img src='${image}'>
+    <img src='${articleData[i].image}'>
     <br>
     <br>
-    <div>${content}</div>
+    <div>${articleData[i].content}</div>
     <br>
     
     </div>
