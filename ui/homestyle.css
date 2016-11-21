@@ -1,0 +1,96 @@
+*{
+	box-sizing: border-box;
+}
+
+#blogotron 
+{
+    color: white;
+    font-size: 5vw;
+    font-family: 'Oswald', sans-serif;
+   	margin-top: 5px;
+    float: right;
+}
+
+.navbar-brand img{
+	float:left;
+
+}
+.navbar-default
+{
+	background: #252525;
+
+	
+}
+
+#profile
+{
+	margin-right: 10px;
+	font-size: 1.5em;
+}
+
+.navbar-nav{
+	color:white;
+	
+	
+	
+}
+.navbar-header
+{
+
+
+}
+.dropdown-menu
+{
+
+background: #252525;
+color: white;
+border-color: white;
+padding: 5px;
+font-size: 0.75vw;
+text-align: center;
+}
+
+
+#nav-list a
+	{
+	text-align: center;
+	
+	margin: 5px;
+	color:white;
+	padding: 5px;
+	font-size: 1.5em;
+	
+}
+
+#nav-list div
+	{
+	text-align: center;
+	
+	margin-right: 10px;
+	color:white;
+	padding: 5px;
+	
+	
+}
+
+
+
+
+.navbar-right
+{
+	float:right;
+}
+
+
+/*end of header*/
+
+.articlestuff{
+height:20%;
+overflow:hidden;
+border: 1px solid black;
+
+}
+
+.articlestuff: hover{
+box-shadow: 0 0 50px yellow;
+}
