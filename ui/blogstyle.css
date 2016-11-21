@@ -105,6 +105,10 @@ body
     color: black;
 }
 
+#content{
+    width:83%;
+}
+
 #commentpost{
     background:white;
     border:1px solid black;
@@ -134,4 +138,5 @@ body
     float:right;
     margin-top:10px;
     margin-bottom:10px;
+    margin-right:171px;
 }
