@@ -101,4 +101,8 @@ body
     font-size:2em;
 
 }
+
+.panel-footer{
+    opacity:0;
+}
 /*END OF HOMEPAGE*/
