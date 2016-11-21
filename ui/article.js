@@ -4,6 +4,8 @@ console.log(articles);
 loadArticles();
 var articleTitle = document.getElementById('posts');
 console.log(articleTitle);
+loadArticleTitle();
+
 var submit=document.getElementById('submitbtn');
 var content=document.getElementById('content');
 console.log(submit);
