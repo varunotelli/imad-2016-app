@@ -93,16 +93,18 @@ body
 }
 
 #contact{
-    right:0;
-    bottom:0;
-    position:relative;
-    color:white;
-    font-family: 'Prociono', serif;
-    font-size:2em;
-    float:right;
+    
+   
 }
 
 .panel-footer{
     opacity:0;
+}
+
+footer a{
+    color:white;
+    font-family: 'Prociono', serif;
+    font-size:2em;
+    float:right;
 }
 /*END OF HOMEPAGE*/
