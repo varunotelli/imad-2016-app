@@ -102,7 +102,7 @@ function loadArticles () {
                     <a href="/articles/${articleData[i].title}"><div class="articlestuff"><div>  
         
         <center><h2><b>${articleData[i].heading}</b></h2></center>
-        <center><h6>${articleData[i].date}</h6></center>
+        <center><h6>(${articleData[i].date.split('T')[0]})</h6></center>
         <br>
         <center>
     <img src='${articleData[i].image}'>
