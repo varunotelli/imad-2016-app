@@ -12,13 +12,13 @@ submit.onclick=function()
         {
             if(request.status===200)
             {
-                alert("User created Successfully! Login to continue!");
+                alert("Commment posted successfully");
                //window.location.href="http://varunotelli.imad.hasura-app.io";
                loadComments();
             
             }
             else
-            alert('problem');
+            alert('Login to post comment');
         }
     };
 
