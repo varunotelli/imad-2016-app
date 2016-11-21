@@ -98,14 +98,23 @@ body
 }
 
 .panel-footer{
-    opacity:0;
+   
 }
 
 footer a{
-    color:white;
+    color:black;
     font-family: 'Prociono', serif;
     font-size:2em;
-    float:right;
-    opacity:1;
+   
+    
 }
+
+#blog{
+    float:left;
+}
+
+#about{
+    float:right;
+}
+
 /*END OF HOMEPAGE*/
