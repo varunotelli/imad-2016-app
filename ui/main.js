@@ -104,7 +104,7 @@ signin.onclick=function()
         if(request.readyState===XMLHttpRequest.DONE)
         {
             if(request.status===200)
-            window.location.href='http://varunotelli.imad.hasura-app.io/ui/profile.html';
+            window.location.href='http://varunotelli.imad.hasura-app.io/ui/home.html';
             else
             alert('problem');
         }
