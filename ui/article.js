@@ -85,6 +85,7 @@ request.send(null);
     
 }
 var articles = document.getElementById('articles');
+console.log(articles);
 function loadArticles () {
         // Check if the user is already logged in
         console.log('in home');
