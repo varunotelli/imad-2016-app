@@ -90,13 +90,13 @@ request.send(null);
 function loadArticles () {
         // Check if the user is already logged in
         console.log('in home');
-    var request = new XMLHttpRequest();
+    /*var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
         if (request.readyState === XMLHttpRequest.DONE) {
             
             if (request.status === 200) {
                 var content = '<ul>';
-                var articleData = JSON.parse(this.responseText);
+                var articleData = JSON.parse(request.responseText);
                 for (var i=0; i< articleData.length; i++) {
                     content += `<li>
                     <a href="/articles/${articleData[i].title}"><div class="articlestuff"><div id="blogtxt">  
@@ -124,6 +124,7 @@ function loadArticles () {
     
     request.open('GET', '/get-articles', true);
     request.send(null);
+    */
 }
 
 loadComments();
