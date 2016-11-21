@@ -119,6 +119,7 @@ body
 
 #userbox{
     float:left;
+    clear:right;
 }
 #submitbtn{
     float:right;
