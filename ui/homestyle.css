@@ -89,10 +89,17 @@ height:20%;
 overflow:hidden;
 border: 1px solid black;
 margin:30px;
-text-decoration: none;
+
 }
 
 .articlestuff:hover{
 box-shadow: 0 0 50px yellow;
 text-decoration: none;
+}
+
+#articles a{
+    text-decoration: none;
+    color:black;
+    
+
 }
