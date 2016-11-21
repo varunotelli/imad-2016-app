@@ -18,7 +18,9 @@ submit.onclick=function()
             
             }
             else
-            alert('Login to post comment');
+            {alert('Login to post comment');
+                window.location.href="http://varunotelli.imad.hasura-app.io/";
+            }
         }
     };
 
