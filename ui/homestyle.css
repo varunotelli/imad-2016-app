@@ -46,7 +46,7 @@ background: #252525;
 color: white;
 border-color: white;
 padding: 5px;
-font-size: 0.75vw;
+font-size: 1vw;
 text-align: center;
 }
 
@@ -83,6 +83,10 @@ text-align: center;
 
 
 /*end of header*/
+
+body{
+  background-image:url('http://www.allmacwallpaper.com/get/iMac-27-inch-wallpapers/Beach-Way-2560x1440/683-10.jpg');
+}
 
 .articlestuff{
 height:20%;
