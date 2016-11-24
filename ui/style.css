@@ -110,7 +110,7 @@ footer a{
 }
 
 #contact{
-    
+    float:left;
     font-family: 'Prociono', serif;
     font-size:12;
     margin-top:70px;
