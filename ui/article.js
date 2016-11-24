@@ -140,7 +140,7 @@ function loadArticles () {
     <img src='${articleData[i].image}'>
     <br>
     <br>
-    <div>${articleData[i].content}</div>
+    <div id="artcontent">${articleData[i].content}</div>
     <br>
     
     </div>
