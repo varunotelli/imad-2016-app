@@ -7,8 +7,7 @@ console.log(articleTitle);
 
 function loadCommentForm () {
     var commentFormHtml = `
-        <center><img src="/ui/ajax-loader.gif">Loading comments....</center>
-</div>  
+        
 <textarea id="content" class="form-control col-md-10" rows="5" placeholder="Type comment here"></textarea>
         <button id="submitbtn" class="btn btn-primary">SUBMIT</button>
   
