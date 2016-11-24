@@ -1,67 +1,10 @@
- var currentArticleTitle = window.location.pathname.split('/')[2];
+var currentArticleTitle = window.location.pathname.split('/')[2];
 var articles = document.getElementById('articles');
 console.log(articles);
 loadArticles();
 var articleTitle = document.getElementById('posts');
 console.log(articleTitle);
-/*
-function loadCommentForm () {
-    var commentFormHtml = `
-        
-<textarea id="content" class="form-control col-md-10" rows="5" placeholder="Type comment here"></textarea>
-        <button id="submitbtn" class="btn btn-primary">SUBMIT</button>
-  
-        `;
-    document.getElementById('commentpost').innerHTML = commentFormHtml;
-    
-    // Submit username/password to login
-    var submit = document.getElementById('submit');
-    submit.onclick = function () {
-        // Create a request object
-        var request = new XMLHttpRequest();
-        
-        // Capture the response and store it in a variable
-        request.onreadystatechange = function () {
-          if (request.readyState === XMLHttpRequest.DONE) {
-                // Take some action
-                if (request.status === 200) {
-                    // clear the form & reload all the comments
-                    document.getElementById('comment_text').value = '';
-                    loadComments();    
-                } else {
-                    alert('Error! Could not submit comment');
-                }
-                submit.value = 'Submit';
-          }
-        };
-        
-        // Make the request
-        var comment = document.getElementById('comment_text').value;
-        request.open('POST', '/submit-comment/' + currentArticleTitle, true);
-        request.setRequestHeader('Content-Type', 'application/json');
-        request.send(JSON.stringify({comment: comment}));  
-        submit.value = 'Submitting...';
-        
-    };
-}
 
-function loadLogin () {
-    // Check if the user is already logged in
-    var request = new XMLHttpRequest();
-    request.onreadystatechange = function () {
-        if (request.readyState === XMLHttpRequest.DONE) {
-            if (request.status === 200) {
-                loadCommentForm(this.responseText);
-            }
-        }
-    };
-    
-    request.open('GET', '/check-login', true);
-    request.send(null);
-}
-
-loadLogin();
-*/
 function loadArticleTitle () {
        console.log('profile');
     var request = new XMLHttpRequest();
@@ -176,8 +119,6 @@ request.send(null);
     
 }
 
-loadComments();
-
 function loadArticles () {
         // Check if the user is already logged in
         console.log('in home');
@@ -218,3 +159,4 @@ function loadArticles () {
     
 }
 
+loadComments();
