@@ -89,7 +89,7 @@ body{
 }
 
 .articlestuff{
-height:20%;
+height:617px;
 overflow:hidden;
 border: 1px solid black;
 margin:30px;
@@ -101,6 +101,7 @@ background-color:#fff;
 .articlestuff:hover{
 box-shadow: 0 0 50px yellow;
 text-decoration: none;
+
 }
 
 #articles a{
