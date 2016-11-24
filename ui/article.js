@@ -41,7 +41,7 @@ function loadCommentForm () {
         
     };
 }
-
+loadComments();
 function loadLogin () {
     // Check if the user is already logged in
     var request = new XMLHttpRequest();
@@ -56,6 +56,8 @@ function loadLogin () {
     request.open('GET', '/check-login', true);
     request.send(null);
 }
+
+loadLogin();
 function loadArticleTitle () {
        console.log('profile');
     var request = new XMLHttpRequest();
@@ -210,4 +212,3 @@ function loadArticles () {
     
 }
 
-loadComments();
