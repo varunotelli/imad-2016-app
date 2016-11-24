@@ -4,7 +4,7 @@ console.log(articles);
 loadArticles();
 var articleTitle = document.getElementById('posts');
 console.log(articleTitle);
-
+/*
 function loadCommentForm () {
     var commentFormHtml = `
         
@@ -61,6 +61,7 @@ function loadLogin () {
 }
 
 loadLogin();
+*/
 function loadArticleTitle () {
        console.log('profile');
     var request = new XMLHttpRequest();
