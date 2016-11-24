@@ -109,3 +109,9 @@ text-decoration: none;
     
 
 }
+
+#artcontent
+{
+    height:200px;
+    overflow:hidden;
+}
