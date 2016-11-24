@@ -59,6 +59,9 @@ app.get('/ui/ajax-loader.gif', function (req, res) { res.sendFile(path.join(__di
 
 app.get('/ui/ajax-loader1.gif', function (req, res) { res.sendFile(path.join(__dirname, 'ui', 'ajax-loader1.gif')); });
 
+app.get('/ui/ajax-loader2.gif', function (req, res) { res.sendFile(path.join(__dirname, 'ui', 'ajax-loader2.gif')); });
+
+
 app.get('/ui/home.html', function (req, res) { res.sendFile(path.join(__dirname, 'ui', 'home.html')); });
 
 
