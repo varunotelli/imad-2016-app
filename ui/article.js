@@ -175,6 +175,8 @@ request.send(null);
     
 }
 
+loadComments();
+
 function loadArticles () {
         // Check if the user is already logged in
         console.log('in home');
@@ -215,4 +217,3 @@ function loadArticles () {
     
 }
 
-loadComments();
