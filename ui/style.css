@@ -94,7 +94,7 @@ body
 
 #contact{
     
-   
+  
 }
 
 .panel-footer{
@@ -113,8 +113,8 @@ footer a{
     float:left;
     font-family: 'Prociono', serif;
     font-size:12;
-    margin-top:70px;
-    
+    margin-top:40px;
+     clear:both;
     padding-right:10px;
 }
 
