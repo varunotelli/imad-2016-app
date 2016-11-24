@@ -7,13 +7,11 @@ console.log(articleTitle);
 
 function loadCommentForm () {
     var commentFormHtml = `
-        <h5>Submit a comment</h5>
-        <center>
-        <textarea id="comment_text" rows="5" cols="100" placeholder="Enter your comment here..."></textarea>
-        </center>
-        <br/>
-        <input type="submit" id="submit" value="Submit" />
-        <br/>
+        <center><img src="/ui/ajax-loader.gif">Loading comments....</center>
+</div>  
+<textarea id="content" class="form-control col-md-10" rows="5" placeholder="Type comment here"></textarea>
+        <button id="submitbtn" class="btn btn-primary">SUBMIT</button>
+  
         `;
     document.getElementById('commentpost').innerHTML = commentFormHtml;
     
