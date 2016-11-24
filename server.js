@@ -152,9 +152,10 @@ function createTemplate(data)
 <div id="commentpost" class="col-md-10">
 <center><img src="/ui/ajax-loader.gif">Loading comments....</center>
 </div>  
-
-
-
+<textarea id="content" class="form-control col-md-10" rows="5" placeholder="Type comment here"></textarea>
+        <button id="submitbtn" class="btn btn-primary">SUBMIT</button>
+  
+</div>
 <script src="/ui/jquery-2.2.3.min.js"></script>
   <script src="/ui/bootstrap.min.js"></script>
   <script src="/ui/main.js"></script>
@@ -328,20 +329,6 @@ app.get('/get-articles', function (req, res) {
       }
    });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
