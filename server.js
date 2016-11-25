@@ -110,6 +110,9 @@ function createTemplate(data)
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${title}</title>
+    <link rel="icon" type="image/png" href="/ui/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#ffffff">
     <link href="/ui/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Trirong" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Prociono" rel="stylesheet">
