@@ -51,27 +51,35 @@ text-align: center;
 
 
 #nav-list a
-    {
-    text-align: center;
-    
-    margin: 5px;
-    color:white;
-    padding: 5px;
-    font-size: 1.5em;
-    
+	{
+	text-align: center;
+	
+	margin: 5px;
+	color:white;
+	padding: 5px;
+	font-size: x-large;
+	
 }
 
 #nav-list div
-    {
-    text-align: center;
-    
-    margin-right: 10px;
-    color:white;
-    padding: 5px;
-    font-size: 1.5em;
-    
+	{
+	text-align: center;
+	margin:5px;
+	margin-right: 10px;
+	color:white;
+	padding: 5px;
+	
+	
 }
 
+
+#homelink,#profilelink{
+    text-align: center;
+	margin:20px;
+	margin-right: 10px;
+	color:white;
+	padding: 5px;
+}
 
 
 
