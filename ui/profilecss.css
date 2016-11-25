@@ -94,7 +94,6 @@ text-align: center;
 
 #dp
 {
-	border:1px solid black;
 	height: 200px;
 	width: 200px;
 	margin-left: 80px;
@@ -135,4 +134,8 @@ hr{
 #nav-list a:hover{
     color:black;
     background:white;
+}
+
+.img{
+    border-radius:50%;
 }
