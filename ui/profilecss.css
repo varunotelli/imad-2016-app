@@ -131,3 +131,8 @@ hr{
     color:white;
     
 }
+
+#nav-list a:hover{
+    color:black;
+    background:white;
+}
