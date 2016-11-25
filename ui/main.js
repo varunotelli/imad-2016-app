@@ -7,7 +7,7 @@
     
     var usertxt=document.getElementById('nav-list');
     
-   // console.log(user);
+   
      var request=new XMLHttpRequest();
     request.onreadystatechange=function()
     {
@@ -16,8 +16,7 @@
             if(request.status===200)
             {
                 
-                console.log("yes");
-               console.log('in func');
+               
                 var user=request.responseText;
                 //alert(user);
               usertxt.innerHTML=` <li id="usertxt" class="dropdown">
@@ -74,7 +73,7 @@ signup.onclick=function()
             
             }
             else
-            alert('problem');
+            alert('Could not create user!');
         }
     };
 
@@ -111,9 +110,9 @@ signin.onclick=function()
 
 
 var username=document.getElementById('signin-usr').value;
-console.log(username);
+
 var password=document.getElementById('signin-pwd').value;
-console.log(password);
+
 
 request.open('POST','http://varunotelli.imad.hasura-app.io/signin',true);
 request.setRequestHeader('Content-Type','application/json');
