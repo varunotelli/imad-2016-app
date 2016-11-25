@@ -1,12 +1,89 @@
-#blogotron
+#blogotron 
 {
     color: white;
     font-size: 5vw;
     font-family: 'Oswald', sans-serif;
-    margin-left:25px;
-    
-    padding-left:10px;
+   	margin-top: 5px;
+    float: right;
 }
+
+.navbar-brand img{
+	float:left;
+
+}
+.navbar-default
+{
+	background: #252525;
+
+	
+}
+
+#profile
+{
+	margin-right: 10px;
+	font-size: 1.5em;
+}
+
+.navbar-nav{
+	color:white;
+	
+	
+	
+}
+.dropdown-toggle
+{
+
+
+}
+.dropdown-menu
+{
+
+background: #252525;
+color: white;
+border-color: white;
+padding: 5px;
+font-size: 0.75vw;
+text-align: center;
+}
+
+
+#nav-list a
+	{
+	text-align: center;
+	font-family: 'Trirong', serif;
+	margin: 5px;
+	color:white;
+	padding: 5px;
+	font-size: x-large;
+	
+}
+
+#nav-list div
+	{
+	text-align: center;
+	margin-top:20px;
+	margin-right: 10px;
+	color:white;
+	padding: 5px;
+	font-size:large;
+	font-family:'Trirong', serif;
+	
+}
+
+
+#homelink,#profilelink{
+    text-align: center;
+	margin:20px;
+	margin-right: 10px;
+	color:white;
+	padding: 5px;
+}
+
+.navbar-right
+{
+	float:right;
+}
+
 
 img{
     float:left;
