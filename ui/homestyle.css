@@ -70,7 +70,7 @@ text-align: center;
 #nav-list div
 	{
 	text-align: center;
-	margin:5px;
+	margin-top:20px;
 	margin-right: 10px;
 	color:white;
 	padding: 5px;
@@ -78,15 +78,7 @@ text-align: center;
 	
 }
 
-a .drop
-{
-    text-align: center;
-	font-family: 'Trirong', serif;
-	margin: 5px;
-	color:white;
-	padding: 5px;
-	font-size:large;
-}
+
 
 #homelink,#profilelink{
     text-align: center;
