@@ -74,7 +74,13 @@ text-align: center;
 }
 
 
-
+#homelink,#profilelink{
+    text-align: center;
+	margin:20px;
+	margin-right: 10px;
+	color:white;
+	padding: 5px;
+}
 
 .navbar-right
 {
