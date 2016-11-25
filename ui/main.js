@@ -44,7 +44,7 @@
             {
                 usertxt.innerHTML=`<li><div id="homelink"><a href="/ui/home.html">Home</a></div></li>
                 <li><div id="profiletxt"><a href="/ui/profile.html">Profile</a></div></li>
-                <li><div id="indextxt"><a href="/">Sign Up/Login</a></div></li>`;
+                <li><div id="indextxt"><a href="/">Login</a></div></li>`;
             }
               
             
@@ -110,7 +110,7 @@ signin.onclick=function()
             if(request.status===200)
             window.location.href='http://varunotelli.imad.hasura-app.io/ui/home.html';
             else
-            alert('problem');
+            alert('Username or Password is incorrect');
         }
     };
 
