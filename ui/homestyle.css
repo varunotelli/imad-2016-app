@@ -135,4 +135,5 @@ text-decoration: none;
 
 #nav-list a :hover{
     color:black;
+    background:white;
 }
