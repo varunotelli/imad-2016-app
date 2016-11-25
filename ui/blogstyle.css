@@ -98,7 +98,16 @@ text-align: center;
 
 body
 {
-   background-image:url('http://digital-photography-school.com/wp-content/uploads/flickr/5661878892_15fba42846_o.jpg');
+  
+   background: url('http://digital-photography-school.com/wp-content/uploads/flickr/5661878892_15fba42846_o.jpg') no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y:auto;
+   
 
 }
 
