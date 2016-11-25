@@ -119,6 +119,7 @@ margin:30px;
 background-color:#fff;
 width:50%;
 border-radius:10%;
+box-shadow: 0 0 50px black;
 }
 
 .articlestuff:hover{
