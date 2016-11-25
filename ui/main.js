@@ -6,7 +6,7 @@
 {
     
     var usertxt=document.getElementById('nav-list');
-    console.log('in func');
+    
    // console.log(user);
      var request=new XMLHttpRequest();
     request.onreadystatechange=function()
@@ -39,8 +39,7 @@
             </li>`;
             
             }
-              else
-              console.log("nope");
+             
               
             
         }
@@ -49,8 +48,7 @@
 request.open('GET','http://varunotelli.imad.hasura-app.io/check-login');
 request.send(null);
   
-   console.log("loaded");
- 
+   
     
 }
 
@@ -64,7 +62,7 @@ loggedinUser();
 var signup=document.getElementById('signupbtn');
 signup.onclick=function()
 {
-    console.log('in func');
+    
     var request=new XMLHttpRequest();
     request.onreadystatechange=function(){
         if(request.readyState===XMLHttpRequest.DONE)
@@ -98,7 +96,7 @@ request.send(JSON.stringify({username:username,password:password,email:email}));
 var signin=document.getElementById('signinbtn');
 signin.onclick=function()
 {
-    console.log('in func');
+   
     var request=new XMLHttpRequest();
     request.onreadystatechange=function(){
         if(request.readyState===XMLHttpRequest.DONE)
@@ -138,7 +136,7 @@ logout.onclick=function()
             if(request.status===200)
             res.send("<h1>LOGGED OUT</h1><br>click<a href='http://varunotelli.imad.hasura-app.io/>here </a> to login");
             else
-            alert('problem');
+            alert('Could not logout');
         }
         
     };
