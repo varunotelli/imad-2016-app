@@ -95,13 +95,14 @@ body
 {
 	font-size: 3vw;
 
-	background-image: url('/ui/wall.jpg') no-repeat fixed;
+	background: url('/ui/wall.jpg') no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y:auto;
 }
 
 #about
