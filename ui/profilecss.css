@@ -121,7 +121,9 @@ hr{
 }
 
 .img{
-	margin-left: 80px;
+	position: relative;
+    height: 200px;
+    top: 50px;
 	padding:0;
 	overflow:hidden;
     border-radius:50%;
