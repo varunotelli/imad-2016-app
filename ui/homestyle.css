@@ -100,7 +100,15 @@ text-align: center;
 /*end of header*/
 
 body{
-  background-image:url('http://www.allmacwallpaper.com/get/iMac-27-inch-wallpapers/Beach-Way-2560x1440/683-10.jpg');
+  
+  background: url('http://www.allmacwallpaper.com/get/iMac-27-inch-wallpapers/Beach-Way-2560x1440/683-10.jpg') no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y:auto;
 }
 
 .articlestuff{
