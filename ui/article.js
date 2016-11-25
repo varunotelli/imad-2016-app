@@ -12,7 +12,7 @@ function loadCommentForm () {
     document.getElementById('typecomment').innerHTML = commentFormHtml;
     
     // Submit username/password to login
-    var submit = document.getElementById('submit');
+    var submit = document.getElementById('submitbtn');
     submit.onclick = function () {
         // Create a request object
         var request = new XMLHttpRequest();
