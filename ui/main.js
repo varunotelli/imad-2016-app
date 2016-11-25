@@ -40,6 +40,11 @@
             
             }
              
+            else
+            {
+                usertxt.innerHTML=`<li>Home</li>
+                <li>Profile</li>`;
+            }
               
             
         }
