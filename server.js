@@ -125,7 +125,8 @@ function createTemplate(data)
             </div>
         
             <ul id="nav-list" class="nav navbar-nav navbar-right">
-                
+                <li>Home</li>
+                <li>Profile</li>
                
             
                 
