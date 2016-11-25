@@ -59,7 +59,7 @@ function loadLogin () {
 
 loadLogin();
 function loadArticleTitle () {
-       console.log('profile');
+       
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
         if (request.readyState === XMLHttpRequest.DONE) {
@@ -86,7 +86,7 @@ function loadArticleTitle () {
 loadArticleTitle();
 var submit=document.getElementById('submitbtn');
 var content=document.getElementById('content');
-console.log(submit);
+
 submit.onclick=function()
 {
     console.log('in art');
