@@ -155,3 +155,8 @@ h6{
     margin-right:170px;
     box-shadow: 0 0 50px black;
 }
+
+#nav-list a:hover{
+    color:black;
+    background:white;
+}
