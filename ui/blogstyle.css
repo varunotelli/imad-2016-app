@@ -124,8 +124,9 @@ body
 }
 
 #content{
-    width:83%;
+    width: 75%;
     box-shadow: 0 0 50px black;
+    margin-left: 120px;
     
 }
 
