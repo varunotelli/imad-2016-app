@@ -93,7 +93,7 @@ text-align: center;
 
 body
 {
-	font-size: 3vw;
+	font-size: 3em;
 
 	background: url('/ui/wall.jpg') no-repeat fixed;
     -webkit-background-size: cover;
