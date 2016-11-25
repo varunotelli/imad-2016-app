@@ -108,7 +108,7 @@ function createTemplate(data)
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${title}</title>
     <link href="/ui/bootstrap.min.css" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css?family=Trirong" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Prociono" rel="stylesheet">
     <link href="/ui/blogstyle.css" rel="stylesheet">
     
