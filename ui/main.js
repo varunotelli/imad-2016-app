@@ -28,11 +28,11 @@
                 
                 <ul class="dropdown-menu">
 
-                    <li><a href="/ui/home.html">HOME</a></li>
+                    <li><a class="drop" href="/ui/home.html">HOME</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="/ui/profile.html">ABOUT</a></li>
+                    <li><a class="drop" href="/ui/profile.html">ABOUT</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a id="logout" href="/logout">SIGN OUT</a></li>
+                    <li><a id="logout" class="drop" href="/logout">SIGN OUT</a></li>
             
             
                 </ul>
