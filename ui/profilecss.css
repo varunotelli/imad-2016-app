@@ -95,7 +95,7 @@ body
 {
 	font-size: 3vw;
 
-	background-image: url('https://4.bp.blogspot.com/-Mh0XXCp7zZQ/UlENk2gFH3I/AAAAAAAAQB8/3IMbjJClhHs/s0/Champions+League+Stadium+hd+wallpapers.jpg');
+	background-image: url('/ui/wall.jpg');
 }
 
 #about
@@ -127,4 +127,20 @@ hr{
 	padding:0;
 	overflow:hidden;
     border-radius:50%;
+}
+
+.details{
+    margin: 20px;
+    padding: 10px;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
 }
