@@ -218,3 +218,232 @@ footer a{
 }
 
 /*END OF HOMEPAGE*/
+
+
+
+
+
+
+@media (max-width: 767px)
+{
+    #blogotron 
+{
+    color: white;
+    font-size: 3.5em;
+    font-family: 'Oswald', sans-serif;
+   	margin-top: 5px;
+   
+}
+
+.navbar-brand img{
+	float:left;
+
+}
+.navbar-default
+{
+	background: transparent;
+    border:0;
+    padding:5px;
+	margin-bottom:30px;
+}
+
+#profile
+{
+	margin-right: 10px;
+	font-size: 1.5em;
+}
+
+.navbar-nav{
+	color:white;
+	
+	
+	
+}
+.dropdown-toggle
+{
+
+
+}
+.dropdown-menu
+{
+
+background: #252525;
+color: white;
+border-color: white;
+padding: 5px;
+font-size: 0.75vw;
+text-align: center;
+}
+
+
+#nav-list a
+	{
+	text-align: center;
+	font-family: 'Trirong', serif;
+	margin: 5px;
+	color:white;
+	padding: 5px;
+	font-size: x-large;
+	
+}
+
+#nav-list div
+	{
+	text-align: center;
+
+	margin-right: 10px;
+	color:white;
+	padding: 5px;
+	font-size:large;
+	font-family:'Trirong', serif;
+	
+}
+
+
+#homelink,#profilelink{
+    text-align: center;
+
+	margin-right: 10px;
+	color:white;
+	padding: 5px;
+}
+
+.navbar-right
+{
+	float:right;
+}
+
+
+img{
+    float:left;
+    margin-top: 4px;
+    margin-left:10px;
+}
+
+
+#blogtxt{
+    float:right;
+}
+
+#signin
+{
+    float:right;
+    color:white;
+    padding: 10px;
+    
+    margin-left: 0px;
+    clear:right;
+}
+
+#signin-usr #signin-pwd 
+{
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+#signupbtn
+{
+    margin-top: 8px;
+    margin-bottom:50px;
+   
+}
+#signup
+{
+   margin-top: 150px;
+    margin-left: 5px;
+    float: right;
+    
+    color: white;
+}
+
+.form-control
+{
+    margin-top: 8px;
+    float:left;
+}
+#signuptxt
+{
+    font-size: 2vw;
+    margin-left: 15px;
+    margin-bottom: 10px;
+
+}
+
+#signintxt
+{
+    font-size: 2vw;
+    margin-left: 15px;
+    margin-bottom: 10px;
+
+}
+
+#signinbtn
+{
+    margin-top: 8px;
+    float: right;
+    
+   
+}
+
+.btn
+{
+    float:right;
+    font-weight: bold;
+}
+
+#desc
+{
+    margin-top: 110px;
+    color: white;
+    margin-left: 20px;
+    font-family: 'Prociono', serif;
+}
+
+body
+{
+    
+    background-image: url("bgimg.jpg"); 
+}
+
+#contact{
+    
+  
+}
+
+.panel-footer{
+   margin-top:50px;
+}
+
+footer a{
+    color:black;
+    
+    
+   
+    
+}
+
+#contact{
+        float: left;
+    font-family: 'Prociono', serif;
+    font-size: 1.3em;
+    margin-top: 0;
+    clear: both;
+    padding-right: 10px;
+    margin-left: 7px;
+}
+
+#blog{
+    float:left;
+    color:white;
+   
+}
+
+#about{
+    float:right;
+    color:white;
+    
+}
+
+	
+}
