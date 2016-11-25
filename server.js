@@ -154,7 +154,7 @@ function createTemplate(data)
         <center><h6>${time.toDateString()}</h6></center>
         <br>
         <center>
-    <img src='${image}'>
+    <img class="img-responsive" src='${image}'>
     <br>
     <br>
     <div>${content}</div>
