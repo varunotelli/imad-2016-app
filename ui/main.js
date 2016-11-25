@@ -42,8 +42,8 @@
              
             else
             {
-                usertxt.innerHTML=`<li><div id="homelink">Home</div></li>
-                <li><div id="profiletxt">Profile</div></li>`;
+                usertxt.innerHTML=`<li><div id="homelink"><a href="/ui/home.html">Home</a></div></li>
+                <li><div id="profiletxt"><a href="/ui/profile.html">Profile</a></div></li>`;
             }
               
             
