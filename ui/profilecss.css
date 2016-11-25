@@ -5,7 +5,7 @@
 #blogotron 
 {
     color: white;
-    font-size: 5vw;
+    font-size: 5em;
     font-family: 'Oswald', sans-serif;
    	margin-top: 5px;
     
@@ -93,9 +93,7 @@ text-align: center;
 
 body
 {
-	font-size: 3em;
-
-	background: url('/ui/wall.jpg') no-repeat fixed;
+    background: url('/ui/wall.jpg') no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -144,10 +142,12 @@ hr{
     font-weight: bold;
     font-size: 1.5em;
     text-align: center;
+    color:black;
 }
 
 h3{
     font-weight: bold;
     font-size: 2em;
     text-align: center;
+    color:blue;
 }
