@@ -147,6 +147,7 @@ function createTemplate(data)
     </div>
 </nav>
     <div class="container-fluid">
+    <center>
         <div id="blogtxt">  
         
         <center><h2><b>${heading}</b></h2></center>
@@ -160,6 +161,7 @@ function createTemplate(data)
     <br>
     
     </div>
+    </center>
     <br><br>
 <h3><b>Comments</b></h3>
 <div id="commentpost" class="col-md-10">
