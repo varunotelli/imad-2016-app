@@ -164,13 +164,16 @@ function createTemplate(data)
     </center>
     <br><br>
     <center>
-<h3><b>Comments</b></h3>
+<h3><b>Comments</b></h3></center>
+<center>
 <div id="commentpost" class="col-md-10">
 <center><img src="/ui/ajax-loader.gif">Loading comments....</center>
 </div>  
+<center>
 <div id="typecomment">
 
 </div>  
+</center>
 </div>
 </center>
 <script src="/ui/jquery-2.2.3.min.js"></script>
