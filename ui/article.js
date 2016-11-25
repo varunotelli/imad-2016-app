@@ -165,7 +165,7 @@ request.send(JSON.stringify({comment:comment}));
 request.open('GET','http://varunotelli.imad.hasura-app.io/get-comments/'+currentArticleTitle,true);
 request.send(null);
   
-   console.log("loaded");
+  
  
     
 }
