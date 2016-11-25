@@ -43,7 +43,8 @@
             else
             {
                 usertxt.innerHTML=`<li><div id="homelink"><a href="/ui/home.html">Home</a></div></li>
-                <li><div id="profiletxt"><a href="/ui/profile.html">Profile</a></div></li>`;
+                <li><div id="profiletxt"><a href="/ui/profile.html">Profile</a></div></li>
+                <li><div id="indextxt"><a href="/">Sign Up/Login</a></div></li>`;
             }
               
             
