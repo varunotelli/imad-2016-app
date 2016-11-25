@@ -131,3 +131,8 @@ text-decoration: none;
     height:200px;
     overflow:hidden;
 }
+
+
+#nav-list a :hover{
+    color:black;
+}
