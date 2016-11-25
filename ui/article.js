@@ -1,9 +1,9 @@
 var currentArticleTitle = window.location.pathname.split('/')[2];
 var articles = document.getElementById('articles');
-console.log(articles);
+
 loadArticles();
 var articleTitle = document.getElementById('posts');
-console.log(articleTitle);
+
 function loadCommentForm () {
     var commentFormHtml = `
         <textarea id="content" class="form-control col-md-10" rows="5" placeholder="Type comment here"></textarea>
@@ -127,10 +127,9 @@ request.send(JSON.stringify({comment:comment}));
 
  function loadComments()
 {
-    console.log(currentArticleTitle);
+   
     var cmt=document.getElementById('commentpost');
-    console.log('in comment');
-   console.log(cmt);
+    
      var request=new XMLHttpRequest();
     request.onreadystatechange=function()
     {
@@ -143,22 +142,21 @@ request.send(JSON.stringify({comment:comment}));
                //console.log('in func');
                var content='';
                 var commentsData=JSON.parse(request.responseText);
-                console.log(commentsData);
+                
                 //alert(user);
                 for(var i=commentsData.length-1;i>=0;i--)
                 {
                     var timestamp= new Date(commentsData[i].time);
-                    console.log(commentsData[i]);
+                   
                     content+=`<div id="userbox" class="commentbox "><b>${commentsData[i].username}</b>  <h6>at ${timestamp.toLocaleTimeString()} on ${timestamp.toLocaleDateString()}</h6> </div>
                     <div id="commbox" class="commentbox ">${commentsData[i].comment}</div>`;
-                    console.log('in loop');
+                   
                     //console.log(commentsData[i].username);
-                    console.log(content);
+                    
                 }
                 cmt.innerHTML=content;
             }
-              else
-              console.log("nope");
+              
               
             
         }
@@ -174,7 +172,7 @@ request.send(null);
 
 function loadArticles () {
         // Check if the user is already logged in
-        console.log('in home');
+        
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
         if (request.readyState === XMLHttpRequest.DONE) {
