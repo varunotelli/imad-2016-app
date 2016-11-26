@@ -97,10 +97,10 @@ request.setRequestHeader('Content-Type','application/json');
 request.send(JSON.stringify({username:username,password:password,email:email}));
 
 
-};
+}
 
-var signin=document.getElementById('signinbtn');
-signin.onclick=function()
+//var signin=document.getElementById('signinbtn');
+function signin()
 {
    
     var request=new XMLHttpRequest();
@@ -126,7 +126,7 @@ request.setRequestHeader('Content-Type','application/json');
 request.send(JSON.stringify({username:username,password:password,email:email}));
 
 
-};
+}
 
 
 
