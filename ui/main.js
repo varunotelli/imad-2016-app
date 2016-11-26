@@ -65,8 +65,8 @@ loggedinUser();
 
 
 
-var signup=document.getElementById('signupbtn');
-signup.onclick=function()
+//var signup=document.getElementById('signupbtn');
+function signup()
 {
     
     var request=new XMLHttpRequest();
