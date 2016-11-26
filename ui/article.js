@@ -57,7 +57,7 @@ function loadLogin () {
     request.send(null);
 }
 
-loadLogin();
+//loadLogin();
 function loadArticleTitle () {
       var articleTitle = document.getElementById('posts'); 
     var request = new XMLHttpRequest();
