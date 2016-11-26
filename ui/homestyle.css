@@ -150,6 +150,9 @@ text-decoration: none;
 
 @media (max-width: 767px)
 {
+    #blogotron{
+        font-size:3em;
+    }
     .articlestuff{
        
        
