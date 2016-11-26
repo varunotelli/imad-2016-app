@@ -156,7 +156,7 @@ function escapeHTML (text)
                 {
                     var timestamp= new Date(commentsData[i].time);
                    
-                    content+=`<div id="userbox" class="commentbox "><b>${commentsData[i].username}</b>  <h6>at ${timestamp.toLocaleTimeString()} on ${timestamp.toLocaleDateString()}</h6> </div>
+                    content+=`<div id="userbox" class="commentbox "><b>${commentsData[i].username}</b>  <h5>at ${timestamp.toLocaleTimeString()} on ${timestamp.toLocaleDateString()}</h5> </div>
                     <div id="commbox" class="commentbox ">${escapeHTML(commentsData[i].comment)}</div>`;
                    
                     //console.log(commentsData[i].username);
