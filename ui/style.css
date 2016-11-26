@@ -229,7 +229,7 @@ footer a{
     #blogotron 
 {
     color: white;
-    font-size: 3.5em;
+    font-size: 3em;
     font-family: 'Oswald', sans-serif;
    	margin-top: 5px;
    
@@ -364,7 +364,7 @@ img{
 }
 #signuptxt
 {
-    font-size: 2vw;
+    font-size: 3em;
     margin-left: 15px;
     margin-bottom: 10px;
 
@@ -372,7 +372,7 @@ img{
 
 #signintxt
 {
-    font-size: 2vw;
+    font-size: 3em;
     margin-left: 15px;
     margin-bottom: 10px;
 
