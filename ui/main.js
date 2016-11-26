@@ -65,7 +65,7 @@ loggedinUser();
 
 
 
-var signup=document.getElementById('signupbtn');
+var signup=document.getElementById('/ui/index.html/#signupbtn');
 signup.onclick=function()
 {
     
