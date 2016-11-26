@@ -193,7 +193,7 @@ function loadArticles () {
                     <a target="_blank" href="/articles/${articleData[i].title}"><div class="articlestuff"><div>  
         
         <center><h2><b>${articleData[i].heading}</b></h2></center>
-        <center><h6>(${articleData[i].date.split('T')[0]})</h6></center>
+        <center><h5>(${articleData[i].date.split('T')[0]})</h5></center>
         <br>
         <center>
     <img class="img-responsive" src='${articleData[i].image}'>
