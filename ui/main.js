@@ -99,7 +99,7 @@ request.send(JSON.stringify({username:username,password:password,email:email}));
 
 };
 
-var signin=document.getElementById('/ui/index.html/#signinbtn');
+var signin=document.getElementById('signinbtn');
 signin.onclick=function()
 {
    
