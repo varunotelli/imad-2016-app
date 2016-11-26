@@ -165,11 +165,18 @@ h6{
     float:right;
     margin-top:10px;
     margin-bottom:10px;
-    margin-right:170px;
+    margin-right:125px;
     box-shadow: 0 0 50px black;
 }
 
 #nav-list a:hover{
     color:black;
     background:white;
+}
+
+@media (max-width: 767px)
+{
+    #blogotron{
+        font-size:3em;
+    }
 }
