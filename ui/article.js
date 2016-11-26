@@ -7,13 +7,16 @@ var articleTitle = document.getElementById('posts');
 function loadCommentForm () {
     var commentFormHtml = `
         <textarea id="content" class="form-control col-md-10" rows="5" placeholder="Type comment here"></textarea>
-        <button id="submitbtn" class="btn btn-primary">SUBMIT</button>
+        <button id="submitbtn" class="btn btn-primary onclick="return submit();">SUBMIT</button>
         `;
     document.getElementById('typecomment').innerHTML = commentFormHtml;
     
     // Submit username/password to login
-    var submit = document.getElementById('submitbtn');
-    submit.onclick = function () {
+    //var submit = document.getElementById('submitbtn');
+    
+}
+
+function submit () {
         // Create a request object
         var request = new XMLHttpRequest();
         
@@ -39,8 +42,7 @@ function loadCommentForm () {
         request.send(JSON.stringify({comment: comment}));  
         submit.value = 'Submitting...';
         
-    };
-}
+    }
 loadComments();
 function loadLogin () {
     // Check if the user is already logged in
