@@ -123,6 +123,14 @@ request.send(JSON.stringify({comment:comment}));
 
 }
 
+function escapeHTML (text)
+{
+    var $text = document.createTextNode(text);
+    var $div = document.createElement('div');
+    $div.appendChild($text);
+    return $div.innerHTML;
+}
+
 
 
  function loadComments()
@@ -149,7 +157,7 @@ request.send(JSON.stringify({comment:comment}));
                     var timestamp= new Date(commentsData[i].time);
                    
                     content+=`<div id="userbox" class="commentbox "><b>${commentsData[i].username}</b>  <h6>at ${timestamp.toLocaleTimeString()} on ${timestamp.toLocaleDateString()}</h6> </div>
-                    <div id="commbox" class="commentbox ">${commentsData[i].comment}</div>`;
+                    <div id="commbox" class="commentbox ">${escapeHTML(commentsData[i].comment)}</div>`;
                    
                     //console.log(commentsData[i].username);
                     
