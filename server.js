@@ -336,12 +336,12 @@ app.get('/check-login', function (req, res) {
 });
 
 app.get('/logout',function(req,res)
-{    if (req.session && req.session.auth && req.session.auth.userId){
+{    
     
 
     delete req.session.auth;
     res.send('Logegd out');
-}   
+  
 });
 
 
