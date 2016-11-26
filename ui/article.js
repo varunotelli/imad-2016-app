@@ -1,7 +1,7 @@
 var currentArticleTitle = window.location.pathname.split('/')[2];
-var articles = document.getElementById('articles');
 
-loadArticles();
+
+//loadArticles();
 
 
 function loadCommentForm () {
@@ -180,7 +180,7 @@ request.send(null);
 
 function loadArticles () {
         // Check if the user is already logged in
-        
+    var articles = document.getElementById('articles');    
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
         if (request.readyState === XMLHttpRequest.DONE) {
