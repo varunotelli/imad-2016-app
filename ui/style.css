@@ -240,7 +240,7 @@ footer a{
 
 #signin
 {
-    float:right;
+    float:left;
     color:white;
     padding: 10px;
     
@@ -265,7 +265,7 @@ footer a{
 {
    margin-top: 150px;
     margin-left: 5px;
-    float: right;
+    float: left;
     
     color: white;
 }
