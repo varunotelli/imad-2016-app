@@ -152,3 +152,10 @@ h3{
     text-align: center;
     color:blue;
 }
+
+@media (max-width: 767px)
+{
+    #blogotron{
+        font-size:3em;
+    }
+}
