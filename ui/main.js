@@ -152,5 +152,5 @@ function loggingout()
     };
 request.open('GET','http://varunotelli.imad.hasura-app.io/logout');
 request.send(null);
-};
+}
 
