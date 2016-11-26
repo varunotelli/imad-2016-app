@@ -121,7 +121,7 @@ function createTemplate(data)
     
     <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
     </head>
-<body  onload="return loadComments();">
+<body  onload="loadComments(); loadLogin();">
 <nav  class="navbar navbar-default">
         <div class="container-fluid">
     
