@@ -83,7 +83,7 @@ function loadArticleTitle () {
     request.open('GET', '/get-articles', true);
     request.send(null);
 }
-loadArticleTitle();
+//loadArticleTitle();
 //var submit=document.getElementById('submitbtn');
 var content=document.getElementById('content');
 
@@ -121,7 +121,7 @@ request.setRequestHeader('Content-Type','application/json');
 request.send(JSON.stringify({comment:comment}));
 
 
-};
+}
 
 
 
