@@ -32,7 +32,7 @@
                    
                     <li><a class="drop" href="/ui/profile.html">ABOUT</a></li>
                     
-                    <li><a id="logout" class="drop" href="/logout">SIGN OUT</a></li>
+                    <li><a id="logout" class="drop" href="/">SIGN OUT</a></li>
             
             
                 </ul>
@@ -132,7 +132,7 @@ request.send(JSON.stringify({username:username,password:password,email:email}));
 
 
 
-/*var logout=document.getElementById('logout');
+var logout=document.getElementById('logout');
 logout.onclick=function()
 {
      var request=new XMLHttpRequest();
@@ -140,7 +140,7 @@ logout.onclick=function()
         if(request.readyState===XMLHttpRequest.DONE)
         {
             if(request.status===200)
-            res.send("<h1>LOGGED OUT</h1><br>click<a href='http://varunotelli.imad.hasura-app.io/>here </a> to login");
+            alert("Logged out successfully!");
             else
             alert('Could not logout');
         }
@@ -149,4 +149,4 @@ logout.onclick=function()
 request.open('GET','http://varunotelli.imad.hasura-app.io/logout');
 request.send(null);
 };
-*/
+
