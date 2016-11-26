@@ -7,16 +7,13 @@ var articleTitle = document.getElementById('posts');
 function loadCommentForm () {
     var commentFormHtml = `
         <textarea id="content" class="form-control col-md-10" rows="5" placeholder="Type comment here"></textarea>
-        <button id="submitbtn" class="btn btn-primary onclick="return submit();">SUBMIT</button>
+        <button id="submitbtn" class="btn btn-primary">SUBMIT</button>
         `;
     document.getElementById('typecomment').innerHTML = commentFormHtml;
     
     // Submit username/password to login
-    //var submit = document.getElementById('submitbtn');
-    
-}
-
-function submit () {
+    var submit = document.getElementById('submitbtn');
+    submit.onclick = function () {
         // Create a request object
         var request = new XMLHttpRequest();
         
@@ -42,7 +39,8 @@ function submit () {
         request.send(JSON.stringify({comment: comment}));  
         submit.value = 'Submitting...';
         
-    }
+    };
+}
 loadComments();
 function loadLogin () {
     // Check if the user is already logged in
@@ -60,15 +58,6 @@ function loadLogin () {
 }
 
 loadLogin();
-
-function escapeHTML (text)
-{
-    var $text = document.createTextNode(text);
-    var $div = document.createElement('div');
-    $div.appendChild($text);
-    return $div.innerHTML;
-}
-
 function loadArticleTitle () {
        
     var request = new XMLHttpRequest();
@@ -160,7 +149,7 @@ request.send(JSON.stringify({comment:comment}));
                     var timestamp= new Date(commentsData[i].time);
                    
                     content+=`<div id="userbox" class="commentbox "><b>${commentsData[i].username}</b>  <h6>at ${timestamp.toLocaleTimeString()} on ${timestamp.toLocaleDateString()}</h6> </div>
-                    <div id="commbox" class="commentbox ">${escapeHTML(commentsData[i].comment)}</div>`;
+                    <div id="commbox" class="commentbox ">${commentsData[i].comment}</div>`;
                    
                     //console.log(commentsData[i].username);
                     
