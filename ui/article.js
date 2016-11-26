@@ -2,7 +2,7 @@ var currentArticleTitle = window.location.pathname.split('/')[2];
 var articles = document.getElementById('articles');
 
 loadArticles();
-var articleTitle = document.getElementById('posts');
+
 
 function loadCommentForm () {
     var commentFormHtml = `
@@ -59,7 +59,7 @@ function loadLogin () {
 
 loadLogin();
 function loadArticleTitle () {
-       
+      var articleTitle = document.getElementById('posts'); 
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
         if (request.readyState === XMLHttpRequest.DONE) {
