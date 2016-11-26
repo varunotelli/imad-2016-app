@@ -151,7 +151,7 @@ function createTemplate(data)
         <div id="blogtxt">  
         
         <center><h2><b>${heading}</b></h2></center>
-        <center><h6>${time.toDateString()}</h6></center>
+        <center><h5>${time.toDateString()}</h5></center>
         <br>
         <center>
     <img class="img-responsive" src='${image}'>
