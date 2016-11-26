@@ -132,7 +132,7 @@ request.send(JSON.stringify({username:username,password:password,email:email}));
 
 
 
-var logout=document.getElementById('logout');
+/*var logout=document.getElementById('logout');
 logout.onclick=function()
 {
      var request=new XMLHttpRequest();
@@ -149,4 +149,4 @@ logout.onclick=function()
 request.open('GET','http://varunotelli.imad.hasura-app.io/logout');
 request.send(null);
 };
-
+*/
