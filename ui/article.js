@@ -196,7 +196,7 @@ function loadArticles () {
         <center><h6>(${articleData[i].date.split('T')[0]})</h6></center>
         <br>
         <center>
-    <img src='${articleData[i].image}'>
+    <img class="img-responsive" src='${articleData[i].image}'>
     <br>
     <br>
     <div id="artcontent">${articleData[i].content}</div>
