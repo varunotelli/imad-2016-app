@@ -179,4 +179,11 @@ h6{
     #blogotron{
         font-size:3em;
     }
+    #blogtxt{
+        width:100%;
+    }
+    #commentpost,#content{
+        width:100%;
+        margin-left:0;
+    }
 }
