@@ -125,7 +125,7 @@ hr{
     background:white;
 }
 
-.img{
+.img-responsive{
 	position: relative;
     height: 200px;
     top: 50px;
