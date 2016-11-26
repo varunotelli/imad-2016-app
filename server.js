@@ -166,7 +166,7 @@ function createTemplate(data)
    <center>
 <h3><b>Comments</b></h3></center>
 
-<div id="commentpost" class="col-md-10">
+<div id="commentpost" class=" col-xs-10 col-md-10 col-lg-10">
 <center><img src="/ui/ajax-loader.gif">Loading comments....</center>
 </div>  
 
