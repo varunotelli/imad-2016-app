@@ -147,3 +147,11 @@ text-decoration: none;
     color:black;
     background:white;
 }
+
+@media (max-width: 767px)
+{
+    .articlestuff{
+        margin-bottom:30px;
+        width:100%;
+    }
+}
