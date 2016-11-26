@@ -7,7 +7,7 @@ var articleTitle = document.getElementById('posts');
 function loadCommentForm () {
     var commentFormHtml = `
         <textarea id="content" class="form-control col-md-10" rows="5" placeholder="Type comment here"></textarea>
-        <button id="submitbtn" class="btn btn-primary">SUBMIT</button>
+        <button id="submitbtn" class="btn btn-primary onclick="return submit();">SUBMIT</button>
         `;
     document.getElementById('typecomment').innerHTML = commentFormHtml;
     
@@ -84,10 +84,10 @@ function loadArticleTitle () {
     request.send(null);
 }
 loadArticleTitle();
-var submit=document.getElementById('submitbtn');
+//var submit=document.getElementById('submitbtn');
 var content=document.getElementById('content');
 
-submit.onclick=function()
+function submit()
 {
     console.log('in art');
     var request=new XMLHttpRequest();
