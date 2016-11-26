@@ -115,7 +115,7 @@ body{
 height:563px;
 overflow:hidden;
 border: 1px solid black;
-margin:30px;
+margin-bottom:30px;
 background-color:#fff;
 width:50%;
 border-radius:10%;
@@ -151,7 +151,8 @@ text-decoration: none;
 @media (max-width: 767px)
 {
     .articlestuff{
-        margin-bottom:30px;
+       
+       
         width:100%;
     }
 }
