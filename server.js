@@ -270,6 +270,8 @@ app.post('/signup',function(req,res){
     {
         res.status(403).send('Invalid');
     }
+    else
+    {
     var salt=crypto.randomBytes(128).toString('hex');
     var dbString=hash(password,salt);
     
@@ -284,7 +286,7 @@ app.post('/signup',function(req,res){
     }
     
 });
-
+}
  
 });
 
