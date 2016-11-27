@@ -196,9 +196,13 @@ h5{
 
 @media (min-width: 1200px)
 {
+    
+    #commentpost{
+        margin-left:190px;
+    }
     #content{
         width:92.5%;
-        margin-left:90;
+        margin-left:100px;
 
     }
     
