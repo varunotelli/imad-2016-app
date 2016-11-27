@@ -147,7 +147,7 @@ function loggingout()
             
             else
             {
-                console.log(request.status);
+                //console.log(request.status);
             alert('Could not logout');
             }
         }
