@@ -7,7 +7,7 @@ var currentArticleTitle = window.location.pathname.split('/')[2];
 function loadCommentForm () {
     var commentFormHtml = `
         
-        <textarea id="content" class="form-control col-md-10" rows="5" placeholder="Type comment here"></textarea>
+        <textarea id="content" class="form-control class="col-md-10 col-lg-10 col-xs-10"" rows="5" placeholder="Type comment here"></textarea>
         <button id="submitbtn" class="btn btn-primary onclick="return submit();">SUBMIT</button>
         `;
     document.getElementById('typecomment').innerHTML = commentFormHtml;
