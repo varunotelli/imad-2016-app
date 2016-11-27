@@ -139,7 +139,7 @@ function loggingout()
     request.onreadystatechange=function(){
         if(request.readyState===XMLHttpRequest.DONE)
         {
-            if(request.status===200)
+            if(request.status===200||request.status===0)
             {
                 alert("Logged out successfully!");
                 window.location.href="http://varunotelli.imad.hasura-app.io/";
