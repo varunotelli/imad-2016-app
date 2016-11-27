@@ -192,3 +192,22 @@ h5{
         margin-right:0;
     }
 }
+
+
+@media (min-width: 1200px)
+{
+    #content{
+        width:92.5%;
+        margin-left:90;
+
+    }
+    
+    #typecomment{
+        margin-left:70px;
+    
+    }
+    
+    #submitbtn{
+        margin-right:0;
+    }
+}
