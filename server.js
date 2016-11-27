@@ -170,7 +170,7 @@ function createTemplate(data)
 <center><img src="/ui/ajax-loader.gif">Loading comments....</center>
 </div>  
 
-<div id="typecomment" class="col-md-10 col-lg-10 col-xs-10">
+<div id="typecomment" >
 
 </div>  
 
